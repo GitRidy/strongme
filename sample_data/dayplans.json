@@ -1,0 +1,264 @@
+{
+  "dayplans": [
+    {
+      "id": "dp1",
+      "nickname": "H Push",
+      "description": "Horizontal Push Emphasis",
+      "activities": [
+        {
+          "activity_num": 1,
+          "activity_id": "a1",
+          "target_sets": 3,
+          "target_reps": [10],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 30
+        },
+        {
+          "activity_num": 2,
+          "activity_id": "a2",
+          "target_sets": 3,
+          "target_reps": [12],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 30
+        },
+        {
+          "activity_num": 3,
+          "activity_id": "a3",
+          "target_sets": 2,
+          "target_reps": [10],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 45
+        },
+        {
+          "activity_num": 4,
+          "activity_id": "a4",
+          "target_sets": 2,
+          "target_reps": [10],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 45
+        },
+        {
+          "activity_num": 5,
+          "activity_id": "a5",
+          "target_sets": 2,
+          "target_reps": [8],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 45
+        }
+      ]
+    },
+    {
+      "id": "dp2",
+      "nickname": "Pull",
+      "description": "Pull Emphasis",
+      "activities": [
+        {
+          "activity_num": 1,
+          "activity_id": "a6",
+          "target_sets": 3,
+          "target_reps": [10],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 30
+        },
+        {
+          "activity_num": 2,
+          "activity_id": "a7",
+          "target_sets": 3,
+          "target_reps": [12],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 30
+        },
+        {
+          "activity_num": 3,
+          "activity_id": "a1",
+          "target_sets": 2,
+          "target_reps": [10],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 45
+        },
+        {
+          "activity_num": 4,
+          "activity_id": "a8",
+          "target_sets": 2,
+          "target_reps": [10],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 45
+        },
+        {
+          "activity_num": 5,
+          "activity_id": "a9",
+          "target_sets": 2,
+          "target_reps": [8],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 45
+        }
+      ]
+    },
+    {
+      "id": "dp3",
+      "nickname": "Squat",
+      "description": "Legs – Squat Emphasis",
+      "activities": [
+        {
+          "activity_num": 1,
+          "activity_id": "a10",
+          "target_sets": 3,
+          "target_reps": [8],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 30
+        },
+        {
+          "activity_num": 2,
+          "activity_id": "a4",
+          "target_sets": 3,
+          "target_reps": [10],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 30
+        },
+        {
+          "activity_num": 3,
+          "activity_id": "a11",
+          "target_sets": 2,
+          "target_reps": [10],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 45
+        },
+        {
+          "activity_num": 4,
+          "activity_id": "a12",
+          "target_sets": 2,
+          "target_reps": [15],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 45
+        },
+        {
+          "activity_num": 5,
+          "activity_id": "a13",
+          "target_sets": 2,
+          "target_reps": [20],
+          "seconds_prep": 15,
+          "seconds_work": 20,
+          "seconds_rest": 45
+        }
+      ]
+    },
+    {
+      "id": "dp4",
+      "nickname": "Hinge",
+      "description": "Legs – Hinge Emphasis",
+      "activities": [
+        {
+          "activity_num": 1,
+          "activity_id": "a8",
+          "target_sets": 3,
+          "target_reps": [10],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 30
+        },
+        {
+          "activity_num": 2,
+          "activity_id": "a14",
+          "target_sets": 3,
+          "target_reps": [12],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 30
+        },
+        {
+          "activity_num": 3,
+          "activity_id": "a15",
+          "target_sets": 2,
+          "target_reps": [10],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 45
+        },
+        {
+          "activity_num": 4,
+          "activity_id": "a16",
+          "target_sets": 2,
+          "target_reps": [12],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 45
+        },
+        {
+          "activity_num": 5,
+          "activity_id": "a5",
+          "target_sets": 2,
+          "target_reps": [8],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 45
+        }
+      ]
+    },
+    {
+      "id": "dp5",
+      "nickname": "Power",
+      "description": "Core + Compound Power",
+      "activities": [
+        {
+          "activity_num": 1,
+          "activity_id": "a17",
+          "target_sets": 3,
+          "target_reps": [8],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 30
+        },
+        {
+          "activity_num": 2,
+          "activity_id": "a18",
+          "target_sets": 3,
+          "target_reps": [6],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 30
+        },
+        {
+          "activity_num": 3,
+          "activity_id": "a9",
+          "target_sets": 2,
+          "target_reps": [10],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 45
+        },
+        {
+          "activity_num": 4,
+          "activity_id": "a19",
+          "target_sets": 2,
+          "target_reps": [30],
+          "seconds_prep": 15,
+          "seconds_work": 30,
+          "seconds_rest": 45
+        },
+        {
+          "activity_num": 5,
+          "activity_id": "a20",
+          "target_sets": 2,
+          "target_reps": [10],
+          "seconds_prep": 15,
+          "seconds_work": 45,
+          "seconds_rest": 45
+        }
+      ]
+    }
+  ]
+}

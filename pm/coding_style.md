@@ -1,3 +1,7 @@
+# Coding Style - StrongMe Web App v0
+
+*RevC*
+
 ### Entity Name Case Format
 
 Use `lower_snake_case` everywhere
@@ -10,7 +14,17 @@ Use `lower_snake_case` everywhere
 - Use prefixed strings as ids, e.g.:
   - `tn997` for transaction id 997
 
+### Component Naming
 
+Use `PascalCase` for component files and function names
+- `TimerConsole.jsx`, `DayPlanSection.jsx`
 
-
-
+### Folder Structure
+```
+/src
+  /components    # Reusable UI components
+  /pages         # Top-level views (if any)
+  /hooks         # Custom hooks
+  /utils         # Helper functions
+  /data          # Type definitions, data transforms
+```

@@ -1,0 +1,22 @@
+{
+  "campaigns": [
+    {
+      "id": "c1",
+      "name": "Baseline Strength & Dumbbell Fluency",
+      "goal": "Build foundational strength and master dumbbell movement patterns across all major muscle groups",
+      "strategy": "5-day full body split with push/pull/legs emphasis rotation. Progressive overload via weight or reps when form permits. Deload week 5.",
+      "duration_weeks": 8,
+      "notes": "Weeks 1-2: Focus on form, use conservative weights. Weeks 3-4: Begin adding load. Week 5: Deload (reduced volume). Weeks 6-8: Push intensity.",
+      "weeks": [
+        { "week_num": 1, "weekplan_id": "wp1" },
+        { "week_num": 2, "weekplan_id": "wp1" },
+        { "week_num": 3, "weekplan_id": "wp1" },
+        { "week_num": 4, "weekplan_id": "wp1" },
+        { "week_num": 5, "weekplan_id": "wp2" },
+        { "week_num": 6, "weekplan_id": "wp1" },
+        { "week_num": 7, "weekplan_id": "wp1" },
+        { "week_num": 8, "weekplan_id": "wp1" }
+      ]
+    }
+  ]
+}
