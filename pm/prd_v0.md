@@ -1,6 +1,6 @@
 # PRD v0: Minimalist Workout Timer PWA - "StrongMe"
 
-*RevE*
+*RevF*
 
 ## 1. Product Overview
 
@@ -45,10 +45,10 @@ A lightweight, mobile-first web application designed for focused workout executi
 ### 2.3 Exercise List
 
 - **Day Plan Section**: A vertical stack of numbered activities showing activity number (1 for the day's first activity), activity icon, activity name, target sets × reps, target times (prep|work|rest), and an info icon `(i)`.
-- Show set×rep counts in this format: `3 x 10`
-  - Where reps differ between sets, use this format: `3 x 10|9|8`
+- Show set×rep counts in this format: `3 × 10`
+  - Where reps differ between sets, use this format: `3 × 10|9|8`
   - Underlying data uses integer arrays: `[10]` for uniform, `[10, 9, 8]` for varied
-- Show prep|work|rest times in seconds, with `-` for zero, in this format: `5|45|10` or `-|60|-`
+- Show prep|work|rest times in seconds, with `—` for zero, in this format: `5|45|10` or `—|60|—`
 - For rest activities, don't show set×rep or time counts
 - **Selection:** Tapping an exercise list item "activates" it, updating the Timer Console at the bottom.
 
@@ -268,7 +268,7 @@ Base URL: https://gitridy.github.io/strongme/data/
 
 ​	*Main Timer Area (left):*
 - **Context line:** Exercise name + "Set X of Y"
-- **Countdown:** Large centered number, colored by current stage (purple/blue/red)
+- **Countdown:** Large centered number, colored by current stage (purple/cyan/orange)
 - **Progress bar:** Thin horizontal bar (~12–16px) with 3 segments proportional to stage durations
   - Completed stages: solid fill (stage color)
   - Active stage: progressive fill advancing left-to-right
@@ -286,18 +286,39 @@ Base URL: https://gitridy.github.io/strongme/data/
 
 ### 4.3 Aesthetics
 
-| Element         | Value                                                        |
-| --------------- | ------------------------------------------------------------ |
-| Background      | `#F5F5F5` (neutral light grey)                               |
-| Surface/Cards   | `#FFFFFF`                                                    |
-| Accent (active) | `#007AFF` (Performance Blue)                                 |
-| Prep stage      | `#8B5CF6` (Purple)                                           |
-| Work stage      | `#3B82F6` (Blue)                                             |
-| Rest stage      | `#EF4444` (Red)                                              |
-| Completed state | `#9CA3AF` (Muted grey)                                       |
-| Typography      | System stack: `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif` |
-| Border radius   | `8px` (cards), `full` (timer ring)                           |
-| Progress bar bg | `#E5E7EB` (light grey, unfilled segments)                    |
+| Element            | Value                                                    |
+| ------------------ | -------------------------------------------------------- |
+| Background         | `#0A0A0C` (near-black)                                   |
+| Surface/Cards      | `#141418`                                                |
+| Surface Elevated   | `#1C1C21`                                                |
+| Surface Border     | `rgba(255, 255, 255, 0.08)`                              |
+| Accent (active)    | `#00D4FF` (Cyan)                                         |
+| Accent Soft        | `rgba(0, 212, 255, 0.12)`                                |
+| Accent Muted       | `rgba(0, 212, 255, 0.25)`                                |
+| Accent Glow        | `rgba(0, 212, 255, 0.4)`                                 |
+| Prep stage         | `#A855F7` (Purple)                                       |
+| Work stage         | `#00D4FF` (Cyan)                                         |
+| Rest stage         | `#F97316` (Orange)                                       |
+| Text Primary       | `#FFFFFF`                                                |
+| Text Secondary     | `#A1A1AA`                                                |
+| Text Tertiary      | `#52525B`                                                |
+| Text Muted         | `#3F3F46`                                                |
+| Completed state    | `#3F3F46` (background), `#71717A` (text)                 |
+| Icon Exercise      | `#FBBF24` (Amber)                                        |
+| Icon Core          | `#34D399` (Emerald)                                      |
+| Icon Rest          | `#F87171` (Red)                                          |
+| Typography         | `'Inter', -apple-system, BlinkMacSystemFont, sans-serif` |
+| Border radius (sm) | `8px`                                                    |
+| Border radius (md) | `12px`                                                   |
+| Border radius (lg) | `16px`                                                   |
+| Border radius (xl) | `24px`                                                   |
+| Progress bar bg    | `#1C1C21` (surface elevated, unfilled segments)          |
+
+**Formatting conventions:**
+
+- Set×rep display: `3 × 10` (multiplication sign, not letter x)
+- Zero time indicator: `—` (em-dash, not hyphen)
+- Times format: `5|45|60` or `—|60|—`
 
 ### 4.4 Information Overlays
 
