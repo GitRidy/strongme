@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>StrongMe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #0A0A0C;
+      --surface: #141418;
+      --surface-elevated: #1C1C21;
+      --surface-border: rgba(255, 255, 255, 0.08);
+      --accent: #00D4FF;
+      --accent-soft: rgba(0, 212, 255, 0.12);
+      --accent-muted: rgba(0, 212, 255, 0.25);
+      --accent-glow: rgba(0, 212, 255, 0.4);
+      --prep: #A855F7;
+      --prep-soft: rgba(168, 85, 247, 0.15);
+      --work: #00D4FF;
+      --work-soft: rgba(0, 212, 255, 0.15);
+      --rest-stage: #F97316;
+      --rest-soft: rgba(249, 115, 22, 0.15);
+      --text-primary: #FFFFFF;
+      --text-secondary: #A1A1AA;
+      --text-tertiary: #52525B;
+      --text-muted: #3F3F46;
+      --completed: #3F3F46;
+      --completed-text: #71717A;
+      --icon-exercise: #FBBF24;
+      --icon-core: #34D399;
+      --icon-rest: #F87171;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      padding-top: env(safe-area-inset-top);
+      padding-bottom: env(safe-area-inset-bottom);
+      max-width: 430px;
+      margin: 0 auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Campaign Bar */
+    .campaign-bar {
+      padding: 16px 20px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .campaign-bar:active {
+      background: var(--surface);
+    }
+
+    .campaign-title {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .campaign-label {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-tertiary);
+    }
+
+    .campaign-bar h1 {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    .campaign-bar .chevron {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-sm);
+      color: var(--text-tertiary);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .campaign-bar .chevron svg {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .campaign-bar.expanded .chevron svg {
+      transform: rotate(180deg);
+    }
+
+    /* Campaign Drawer */
+    .campaign-drawer {
+      background: var(--surface);
+      margin: 0 16px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--surface-border);
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+
+    .campaign-drawer.open {
+      max-height: 200px;
+      opacity: 1;
+      transform: translateY(0);
+      margin-bottom: 12px;
+    }
+
+    .campaign-drawer-inner {
+      padding: 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .drawer-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .drawer-item.full {
+      grid-column: span 2;
+    }
+
+    .drawer-item-label {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-tertiary);
+    }
+
+    .drawer-item-value {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    /* Navigation Section */
+    .nav-section {
+      margin: 0 16px 12px;
+    }
+
+    /* Campaign Weeks Bar */
+    .weeks-bar {
+      margin-bottom: 16px;
+    }
+
+    .weeks-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .weeks-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-tertiary);
+    }
+
+    .weeks-progress {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-tertiary);
+    }
+
+    .weeks-progress span {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .weeks-container {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding: 2px;
+      margin: -2px;
+    }
+
+    .weeks-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .week-box {
+      min-width: 40px;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--surface-border);
+      background: var(--surface);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-tertiary);
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .week-box:hover {
+      border-color: var(--text-tertiary);
+      color: var(--text-secondary);
+    }
+
+    .week-box.completed {
+      background: var(--completed);
+      border-color: var(--completed);
+      color: var(--completed-text);
+    }
+
+    .week-box.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--bg);
+      font-weight: 700;
+      box-shadow: 0 0 20px var(--accent-glow);
+    }
+
+    /* Week Plan Bar */
+    .weekplan-bar {
+      background: var(--surface);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--surface-border);
+      padding: 14px;
+    }
+
+    .weekplan-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .weekplan-week {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-tertiary);
+    }
+
+    .weekplan-divider {
+      color: var(--text-muted);
+    }
+
+    .weekplan-name {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-secondary);
+    }
+
+    .days-container {
+      display: flex;
+      gap: 6px;
+    }
+
+    .day-box {
+      flex: 1;
+      aspect-ratio: 1;
+      max-height: 46px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--surface-border);
+      background: var(--surface-elevated);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .day-box .day-letter {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-tertiary);
+      transition: color 0.2s;
+    }
+
+    .day-box .day-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--text-tertiary);
+      opacity: 0.5;
+      transition: all 0.2s;
+    }
+
+    .day-box:not(.rest-day):hover {
+      border-color: var(--text-tertiary);
+    }
+
+    .day-box:not(.rest-day):hover .day-letter {
+      color: var(--text-secondary);
+    }
+
+    .day-box.rest-day {
+      cursor: default;
+      background: repeating-linear-gradient(
+        45deg,
+        var(--surface-elevated),
+        var(--surface-elevated) 3px,
+        var(--surface) 3px,
+        var(--surface) 6px
+      );
+    }
+
+    .day-box.rest-day .day-letter {
+      color: var(--text-muted);
+    }
+
+    .day-box.rest-day .day-dot {
+      display: none;
+    }
+
+    .day-box.completed:not(.rest-day) {
+      background: var(--completed);
+      border-color: var(--completed);
+    }
+
+    .day-box.completed:not(.rest-day) .day-letter {
+      color: var(--completed-text);
+    }
+
+    .day-box.completed .day-dot {
+      background: var(--completed-text);
+      opacity: 0.6;
+    }
+
+    .day-box.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      box-shadow: 0 0 16px var(--accent-glow);
+    }
+
+    .day-box.active .day-letter {
+      color: var(--bg);
+      font-weight: 700;
+    }
+
+    .day-box.active .day-dot {
+      background: var(--bg);
+      opacity: 1;
+    }
+
+    /* Day Plan Section */
+    .dayplan-section {
+      flex: 1;
+      overflow-y: auto;
+      padding: 0 16px 16px;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .dayplan-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      padding-top: 4px;
+    }
+
+    .dayplan-day {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-tertiary);
+    }
+
+    .dayplan-divider {
+      color: var(--text-muted);
+    }
+
+    .dayplan-name {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-secondary);
+    }
+
+    .activity-card {
+      background: var(--surface);
+      border-radius: var(--radius-md);
+      border: 1.5px solid var(--surface-border);
+      padding: 12px 14px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+    }
+
+    .activity-card:hover {
+      border-color: rgba(255, 255, 255, 0.15);
+      background: var(--surface-elevated);
+    }
+
+    .activity-card.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 24px var(--accent-glow), inset 0 0 0 1px var(--accent-muted);
+    }
+
+    .activity-num {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--surface-elevated);
+      border: 1.5px solid var(--surface-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-tertiary);
+      flex-shrink: 0;
+      transition: all 0.2s;
+    }
+
+    .activity-card.active .activity-num {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--bg);
+    }
+
+    .activity-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-sm);
+      background: var(--surface-elevated);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 20px;
+    }
+
+    .activity-icon.exercise {
+      background: rgba(251, 191, 36, 0.15);
+    }
+
+    .activity-icon.core {
+      background: rgba(52, 211, 153, 0.15);
+    }
+
+    .activity-icon.rest {
+      background: rgba(248, 113, 113, 0.15);
+    }
+
+    .activity-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .activity-name {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      letter-spacing: -0.1px;
+    }
+
+    .activity-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .activity-meta .sets-reps {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    .activity-meta .times {
+      font-size: 11px;
+      font-weight: 500;
+      color: #6B7280;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.5px;
+    }
+
+    .info-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--surface-elevated);
+      border: 1px solid var(--surface-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-tertiary);
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.2s;
+    }
+
+    .info-btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .info-btn:hover {
+      background: var(--accent-soft);
+      border-color: var(--accent-muted);
+      color: var(--accent);
+    }
+
+    /* Rest Activity */
+    .activity-card.rest-activity {
+      opacity: 0.8;
+    }
+
+    /* Timer Console */
+    .timer-console {
+      background: var(--surface);
+      border-top: 1px solid var(--surface-border);
+      display: flex;
+      min-height: 185px;
+      position: relative;
+    }
+
+    .timer-main {
+      flex: 3;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .timer-header {
+      margin-bottom: 6px;
+    }
+
+    .timer-context {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      margin-bottom: 2px;
+    }
+
+    .timer-set {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-tertiary);
+    }
+
+    .timer-center {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+    }
+
+    .timer-stage-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .timer-stage-label.prep {
+      color: var(--prep);
+    }
+
+    .timer-stage-label.work {
+      color: var(--work);
+    }
+
+    .timer-stage-label.rest {
+      color: var(--rest-stage);
+    }
+
+    .timer-countdown {
+      font-size: 72px;
+      font-weight: 800;
+      text-align: center;
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -3px;
+    }
+
+    .timer-countdown.prep {
+      color: var(--prep);
+      text-shadow: 0 0 40px rgba(168, 85, 247, 0.5);
+    }
+
+    .timer-countdown.work {
+      color: var(--work);
+      text-shadow: 0 0 40px var(--accent-glow);
+    }
+
+    .timer-countdown.rest {
+      color: var(--rest-stage);
+      text-shadow: 0 0 40px rgba(249, 115, 22, 0.5);
+    }
+
+    .progress-bar-container {
+      margin-top: auto;
+    }
+
+    .progress-bar {
+      height: 8px;
+      background: var(--surface-elevated);
+      border-radius: 4px;
+      display: flex;
+      overflow: hidden;
+      gap: 3px;
+    }
+
+    .progress-segment {
+      height: 100%;
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+      background: var(--surface-elevated);
+    }
+
+    .progress-segment .fill {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      border-radius: 4px;
+      transition: width 0.1s linear;
+    }
+
+    .progress-segment.prep .fill {
+      background: var(--prep);
+      box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+    }
+
+    .progress-segment.work .fill {
+      background: var(--work);
+      box-shadow: 0 0 10px var(--accent-glow);
+    }
+
+    .progress-segment.rest .fill {
+      background: var(--rest-stage);
+      box-shadow: 0 0 10px rgba(249, 115, 22, 0.5);
+    }
+
+    .progress-segment.completed .fill {
+      width: 100% !important;
+      opacity: 0.55;
+      box-shadow: none;
+    }
+
+    .timer-status {
+      text-align: center;
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-top: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .timer-next {
+      flex: 1;
+      background: var(--bg);
+      padding: 18px 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-left: 1px solid var(--surface-border);
+    }
+
+    .timer-next-label {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .timer-next-name {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      line-height: 1.35;
+      letter-spacing: -0.1px;
+      color: var(--text-primary);
+    }
+
+    .timer-next-meta {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-tertiary);
+    }
+
+    /* Overlay & Bottom Sheet */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 100;
+    }
+
+    .overlay.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .bottom-sheet {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 430px;
+      margin: 0 auto;
+      background: var(--surface);
+      border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+      border: 1px solid var(--surface-border);
+      border-bottom: none;
+      transform: translateY(100%);
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 101;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+
+    .bottom-sheet.open {
+      transform: translateY(0);
+    }
+
+    .bottom-sheet-handle {
+      width: 36px;
+      height: 4px;
+      background: var(--text-muted);
+      border-radius: 2px;
+      margin: 12px auto 8px;
+    }
+
+    .bottom-sheet-content {
+      padding: 8px 24px 32px;
+    }
+
+    .bottom-sheet h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.3px;
+    }
+
+    .bottom-sheet-description {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    .bottom-sheet-tips-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-tertiary);
+      margin-bottom: 12px;
+    }
+
+    .bottom-sheet-tips {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .bottom-sheet-tips li {
+      font-size: 14px;
+      padding: 12px 14px;
+      background: var(--surface-elevated);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      line-height: 1.4;
+      color: var(--text-secondary);
+    }
+
+    .bottom-sheet-tips li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+      margin-top: 6px;
+      box-shadow: 0 0 8px var(--accent-glow);
+    }
+  </style>
+</head>
+<body>
+  <!-- Campaign Bar -->
+  <div class="campaign-bar" id="campaignBar" onclick="toggleDrawer()">
+    <div class="campaign-title">
+      <span class="campaign-label">Campaign</span>
+      <h1>Summer Strength</h1>
+    </div>
+    <span class="chevron">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    </span>
+  </div>
+
+  <!-- Campaign Drawer -->
+  <div class="campaign-drawer" id="campaignDrawer">
+    <div class="campaign-drawer-inner">
+      <div class="drawer-item">
+        <span class="drawer-item-label">Goal</span>
+        <span class="drawer-item-value">Build foundational strength</span>
+      </div>
+      <div class="drawer-item">
+        <span class="drawer-item-label">Duration</span>
+        <span class="drawer-item-value">8 weeks</span>
+      </div>
+      <div class="drawer-item full">
+        <span class="drawer-item-label">Strategy</span>
+        <span class="drawer-item-value">Progressive overload with compound movements</span>
+      </div>
+      <div class="drawer-item full">
+        <span class="drawer-item-label">Notes</span>
+        <span class="drawer-item-value">Focus on form first 2 weeks</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Section -->
+  <div class="nav-section">
+    <!-- Campaign Weeks Bar -->
+    <div class="weeks-bar">
+      <div class="weeks-header">
+        <span class="weeks-label">Week</span>
+        <span class="weeks-progress"><span>3</span> of 8</span>
+      </div>
+      <div class="weeks-container">
+        <div class="week-box completed">1</div>
+        <div class="week-box completed">2</div>
+        <div class="week-box active">3</div>
+        <div class="week-box">4</div>
+        <div class="week-box">5</div>
+        <div class="week-box">6</div>
+        <div class="week-box">7</div>
+        <div class="week-box">8</div>
+      </div>
+    </div>
+
+    <!-- Week Plan Bar -->
+    <div class="weekplan-bar">
+      <div class="weekplan-header">
+        <span class="weekplan-week">Week 3</span>
+        <span class="weekplan-divider">·</span>
+        <span class="weekplan-name">Dumbbell Focus</span>
+      </div>
+      <div class="days-container">
+        <div class="day-box completed">
+          <span class="day-letter">M</span>
+          <span class="day-dot"></span>
+        </div>
+        <div class="day-box rest-day">
+          <span class="day-letter">T</span>
+          <span class="day-dot"></span>
+        </div>
+        <div class="day-box active">
+          <span class="day-letter">W</span>
+          <span class="day-dot"></span>
+        </div>
+        <div class="day-box rest-day">
+          <span class="day-letter">T</span>
+          <span class="day-dot"></span>
+        </div>
+        <div class="day-box">
+          <span class="day-letter">F</span>
+          <span class="day-dot"></span>
+        </div>
+        <div class="day-box">
+          <span class="day-letter">S</span>
+          <span class="day-dot"></span>
+        </div>
+        <div class="day-box rest-day">
+          <span class="day-letter">S</span>
+          <span class="day-dot"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day Plan Section -->
+  <div class="dayplan-section">
+    <div class="dayplan-header">
+      <span class="dayplan-day">Wednesday</span>
+      <span class="dayplan-divider">·</span>
+      <span class="dayplan-name">Upper A · Upper Body Push Focus</span>
+    </div>
+
+    <div class="activity-card" onclick="selectActivity(this)">
+      <div class="activity-num">1</div>
+      <div class="activity-icon exercise">💪</div>
+      <div class="activity-info">
+        <div class="activity-name">Horizontal Dumbbell Press</div>
+        <div class="activity-meta">
+          <span class="sets-reps">3 × 10</span>
+          <span class="times">5|45|60</span>
+        </div>
+      </div>
+      <button class="info-btn" onclick="event.stopPropagation(); openSheet('Horizontal Dumbbell Press', 'Horizontal bench press with dumbbells targeting the chest, shoulders, and triceps.', ['Keep feet wide and planted on the floor', 'Lower the weights slowly with control', 'Full range of motion at the bottom'])">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="activity-card active" onclick="selectActivity(this)">
+      <div class="activity-num">2</div>
+      <div class="activity-icon core">🦎</div>
+      <div class="activity-info">
+        <div class="activity-name">Dead Bugs</div>
+        <div class="activity-meta">
+          <span class="sets-reps">3 × 10|9|8</span>
+          <span class="times">5|40|45</span>
+        </div>
+      </div>
+      <button class="info-btn" onclick="event.stopPropagation(); openSheet('Dead Bugs', 'Core stability exercise with alternating limb extension while maintaining a neutral spine.', ['Push lower back firmly into the floor', 'Move slowly and with control', 'Breathe out on each extension'])">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="activity-card" onclick="selectActivity(this)">
+      <div class="activity-num">3</div>
+      <div class="activity-icon exercise">🏋️</div>
+      <div class="activity-info">
+        <div class="activity-name">Incline Dumbbell Curl</div>
+        <div class="activity-meta">
+          <span class="sets-reps">3 × 12</span>
+          <span class="times">5|30|45</span>
+        </div>
+      </div>
+      <button class="info-btn" onclick="event.stopPropagation(); openSheet('Incline Dumbbell Curl', 'Bicep curl performed on an incline bench for increased stretch at the bottom position.', ['Keep elbows stationary throughout', 'Full extension at the bottom', 'Squeeze the bicep at the top'])">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="activity-card rest-activity" onclick="selectActivity(this)">
+      <div class="activity-num">4</div>
+      <div class="activity-icon rest">❤️‍🩹</div>
+      <div class="activity-info">
+        <div class="activity-name">Rest</div>
+      </div>
+      <button class="info-btn" onclick="event.stopPropagation(); openSheet('Rest', 'Recovery period between exercises. Use this time to hydrate and prepare for the next movement.', ['Stay hydrated', 'Control your breathing', 'Light stretching if needed'])">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="activity-card" onclick="selectActivity(this)">
+      <div class="activity-num">5</div>
+      <div class="activity-icon exercise">🔱</div>
+      <div class="activity-info">
+        <div class="activity-name">Overhead Tricep Extension</div>
+        <div class="activity-meta">
+          <span class="sets-reps">3 × 12</span>
+          <span class="times">5|40|45</span>
+        </div>
+      </div>
+      <button class="info-btn" onclick="event.stopPropagation(); openSheet('Overhead Tricep Extension', 'Tricep isolation exercise with dumbbell held overhead, targeting the long head of the tricep.', ['Keep elbows close to your head', 'Lower the weight slowly behind your head', 'Full lockout at the top of each rep'])">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="activity-card" onclick="selectActivity(this)">
+      <div class="activity-num">6</div>
+      <div class="activity-icon core">🧘</div>
+      <div class="activity-info">
+        <div class="activity-name">Plank Hold</div>
+        <div class="activity-meta">
+          <span class="sets-reps">3 × 1</span>
+          <span class="times">–|60|30</span>
+        </div>
+      </div>
+      <button class="info-btn" onclick="event.stopPropagation(); openSheet('Plank Hold', 'Isometric core exercise maintaining a rigid body position on forearms and toes.', ['Keep your hips level with shoulders', 'Engage core throughout the hold', 'Breathe steadily and consistently'])">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Timer Console -->
+  <div class="timer-console">
+    <div class="timer-main">
+      <div class="timer-header">
+        <div class="timer-context">Dead Bugs</div>
+        <div class="timer-set">Set 2 of 3</div>
+      </div>
+      <div class="timer-center">
+        <div class="timer-stage-label work">Work</div>
+        <div class="timer-countdown work">32</div>
+      </div>
+      <div class="progress-bar-container">
+        <div class="progress-bar">
+          <div class="progress-segment prep completed" style="flex: 5;">
+            <div class="fill" style="width: 100%;"></div>
+          </div>
+          <div class="progress-segment work" style="flex: 40;">
+            <div class="fill" style="width: 60%;"></div>
+          </div>
+          <div class="progress-segment rest" style="flex: 45;">
+            <div class="fill"></div>
+          </div>
+        </div>
+        <div class="timer-status">Tap to Pause</div>
+      </div>
+    </div>
+    <div class="timer-next">
+      <div class="timer-next-label">Next</div>
+      <div class="timer-next-name">Incline Dumbbell Curl</div>
+      <div class="timer-next-meta">3 × 12</div>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay" onclick="closeSheet()"></div>
+
+  <!-- Bottom Sheet -->
+  <div class="bottom-sheet" id="bottomSheet">
+    <div class="bottom-sheet-handle"></div>
+    <div class="bottom-sheet-content">
+      <h2 id="sheetTitle">Exercise Name</h2>
+      <p class="bottom-sheet-description" id="sheetDescription">Exercise description goes here.</p>
+      <div class="bottom-sheet-tips-label">Tips</div>
+      <ul class="bottom-sheet-tips" id="sheetTips">
+        <li>Tip 1</li>
+        <li>Tip 2</li>
+        <li>Tip 3</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleDrawer() {
+      const bar = document.getElementById('campaignBar');
+      const drawer = document.getElementById('campaignDrawer');
+      bar.classList.toggle('expanded');
+      drawer.classList.toggle('open');
+    }
+
+    function selectActivity(card) {
+      document.querySelectorAll('.activity-card').forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+    }
+
+    function openSheet(title, description, tips) {
+      document.getElementById('sheetTitle').textContent = title;
+      document.getElementById('sheetDescription').textContent = description;
+      const tipsList = document.getElementById('sheetTips');
+      tipsList.innerHTML = tips.map(tip => `<li>${tip}</li>`).join('');
+      document.getElementById('overlay').classList.add('open');
+      document.getElementById('bottomSheet').classList.add('open');
+    }
+
+    function closeSheet() {
+      document.getElementById('overlay').classList.remove('open');
+      document.getElementById('bottomSheet').classList.remove('open');
+    }
+  </script>
+</body>
+</html>

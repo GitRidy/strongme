@@ -17,3 +17,6 @@ dist/
 *.bak
 *.tmp
 *.swp
+
+design/old/
+
