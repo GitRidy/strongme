@@ -1,6 +1,6 @@
 # PRD v0: Minimalist Workout Timer PWA - "StrongMe"
 
-*RevC*
+*RevE*
 
 ## 1. Product Overview
 
@@ -54,10 +54,14 @@ A lightweight, mobile-first web application designed for focused workout executi
 
 ### 2.4 Timer Console
 
-- **Context:** Displays the currently selected exercise name and progress (e.g., "Set 2 of 3").
-- **Split Timer:** The timer comprises a thick ring in 3 arc sections, each representing a stage: purple for prep, blue for work, red for rest. In the center of the ring is a large number, colored according to the current stage and counting down while active. Tapping anywhere in the timer console section toggles the timer between paused and active.
-- **Stage Start Flash Indicator**: On starting a new stage, the timer briefly flashes white.
-- **Stage Start Audio Indicator:** None in V0.
+- **Layout:** Split into main timer area (~75%) and next activity preview (~25%).
+- **Context:** Main area displays currently selected exercise name and progress (e.g., "Set 2 of 3").
+- **Countdown Number:** Large, centered above progress bar, colored by current stage.
+- **Progress Bar:** Horizontal bar divided into 3 proportional segments (prep, work, rest). Completed stages show solid fill. Active stage fills progressively left-to-right as time elapses. Pending stages show as unfilled/muted.
+- **Next Activity Preview:** Right-side panel showing "NEXT" label, upcoming activity name, and volume (e.g., `3 × 10`). On final activity, shows "Done" or session complete state.
+- **Interaction:** Tap anywhere in timer console to toggle between paused and active.
+- **Stage Transition:** Brief white flash overlay when advancing to next stage.
+- **Audio Indicator:** None in V0.
 
 ### 2.5 Information Overlays
 
@@ -68,6 +72,8 @@ A lightweight, mobile-first web application designed for focused workout executi
 ### 3.1 Data Schema
 
 Data is stored as static JSON files hosted on GitHub Pages:
+
+Base URL: https://gitridy.github.io/strongme/data/
 
 ```
 /data
@@ -218,13 +224,13 @@ Data is stored as static JSON files hosted on GitHub Pages:
 
 ### 4.1 Layout Structure (Vertical Stack)
 
-| Zone               | Height | Content                            |
-| ------------------ | ------ | ---------------------------------- |
-| Campaign Bar       | ~5%    | Campaign name, tap for drawer      |
-| Campaign Weeks Bar | ~8%    | Horizontal scrollable week numbers |
-| Week Plan Bar      | ~8%    | 7-day strip (Mon–Sun)              |
-| Day Plan Section   | ~39%   | Scrollable activity list           |
-| Timer Console      | ~40%   | Ring timer + controls              |
+| Zone               | Height | Content                                  |
+| ------------------ | ------ | ---------------------------------------- |
+| Campaign Bar       | ~5%    | Campaign name, tap for drawer            |
+| Campaign Weeks Bar | ~8%    | Horizontal scrollable week numbers       |
+| Week Plan Bar      | ~8%    | 7-day strip (Mon–Sun)                    |
+| Day Plan Section   | ~44%   | Scrollable activity list                 |
+| Timer Console      | ~35%   | Progress bar + countdown + next activity |
 
 ### 4.2 Component Details
 
@@ -258,12 +264,25 @@ Data is stored as static JSON files hosted on GitHub Pages:
 
 **Timer Console**
 
-- Fixed to bottom of viewport
+- Fixed to bottom of viewport, split 75/25 between main timer and next activity preview
+
+​	*Main Timer Area (left):*
 - **Context line:** Exercise name + "Set X of Y"
-- **Ring timer:** Three-segment arc (prep purple, work blue, rest red), proportional to durations
-- **Center display:** Large countdown number, colored by current stage
+- **Countdown:** Large centered number, colored by current stage (purple/blue/red)
+- **Progress bar:** Thin horizontal bar (~12–16px) with 3 segments proportional to stage durations
+  - Completed stages: solid fill (stage color)
+  - Active stage: progressive fill advancing left-to-right
+  - Pending stages: muted/unfilled
+  - Segment dividers: subtle vertical hairlines
 - **Interaction:** Tap anywhere to toggle play/pause
 - **Stage transition:** Brief white flash overlay
+
+​	*Next Activity Preview (right):*
+- **Label:** "NEXT" in muted small caps
+- **Activity name:** Upcoming exercise name
+- **Volume:** Sets × reps or duration (e.g., `3 × 10` or `2 × 60s`)
+- **Final activity state:** Shows "Done" when no next activity exists
+- **Styling:** Muted/secondary treatment to avoid competing with active timer
 
 ### 4.3 Aesthetics
 
@@ -278,6 +297,7 @@ Data is stored as static JSON files hosted on GitHub Pages:
 | Completed state | `#9CA3AF` (Muted grey)                                       |
 | Typography      | System stack: `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif` |
 | Border radius   | `8px` (cards), `full` (timer ring)                           |
+| Progress bar bg | `#E5E7EB` (light grey, unfilled segments)                    |
 
 ### 4.4 Information Overlays
 
@@ -295,7 +315,46 @@ Data is stored as static JSON files hosted on GitHub Pages:
 - Contains: goal, strategy, duration, notes
 - Dismiss via tap on Campaign Bar or outside
 
-## 5. Success Criteria for V0
+**Error States**
+
+| Scenario                        | Behavior                                                     |
+| ------------------------------- | ------------------------------------------------------------ |
+| Network fetch fails (online)    | Show retry button + "Couldn't load workout data"             |
+| Offline, no cache               | Show "You're offline. Open the app online first to cache workouts." |
+| Missing `activity_id` reference | Skip activity, log warning to console, continue rendering    |
+| Empty day plan                  | Show "Rest day" state                                        |
+
+## 5. Loading & Viewport
+
+### First Load Experience
+
+1. Show centered app logo + spinner while fetching
+2. If >3 seconds, add "Loading workouts..." text
+3. On success, transition to default view (current week, current day)
+4. On failure, show error state (above)
+
+### Viewport / Device Handling
+
+Add to `index.html`:
+
+html
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+```
+
+Add to global CSS:
+
+css
+
+```css
+body {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+```
+
+## 6. Success Criteria for V0
 
 1. **Installable:** App installs to Android home screen via Chrome "Add to Home Screen"
 2. **Data loading:** App fetches and correctly parses all four JSON files from GitHub Pages
@@ -306,7 +365,7 @@ Data is stored as static JSON files hosted on GitHub Pages:
 7. **Responsive:** UI renders correctly on viewport widths 320px–428px (typical Android phones)
 8. **State persistence:** Selected campaign/week/day survives app close and reopen
 
-## 6. Future Considerations (Post-V0)
+## 7. Future Considerations (Post-V0)
 
 - **Done Log:** Track completed activities, sets, reps, and timestamps
 - **Audio cues:** Stage transition beeps/chimes
