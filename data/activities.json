@@ -1,0 +1,301 @@
+{
+  "activities": [
+    {
+      "id": "a1",
+      "code": "DBFlP",
+      "name": "DB Floor Press",
+      "description": "Chest press performed lying on floor with dumbbells. Floor limits range of motion, protecting shoulders while building pressing strength.",
+      "tips": [
+        "Keep elbows at 45° from torso",
+        "Pause briefly when triceps touch floor",
+        "Drive feet into ground for stability"
+      ],
+      "is_timed": false,
+      "icon_filename": "db_floor_press_icon.svg",
+      "photo_filename": "db_floor_press_photo.jpg"
+    },
+    {
+      "id": "a2",
+      "code": "DBSqP",
+      "name": "DB Squeeze Press",
+      "description": "Press dumbbells together throughout the movement, maximizing chest activation through constant tension.",
+      "tips": [
+        "Squeeze dumbbells together hard throughout",
+        "Focus on chest contraction, not weight",
+        "Controlled tempo: 2 seconds up, 2 down"
+      ],
+      "is_timed": false,
+      "icon_filename": "db_squeeze_press_icon.svg",
+      "photo_filename": "db_squeeze_press_photo.jpg"
+    },
+    {
+      "id": "a3",
+      "code": "DBRow",
+      "name": "DB Row",
+      "description": "Single-arm rowing motion targeting lats and upper back. Use bench or sturdy surface for support.",
+      "tips": [
+        "Pull elbow toward hip, not shoulder",
+        "Keep back flat and core braced",
+        "Full stretch at bottom, squeeze at top"
+      ],
+      "is_timed": false,
+      "icon_filename": "db_row_icon.svg",
+      "photo_filename": "db_row_photo.jpg"
+    },
+    {
+      "id": "a4",
+      "code": "DBGob",
+      "name": "DB Goblet Squat",
+      "description": "Squat holding dumbbell at chest. Excellent for learning squat mechanics and building quad/glute strength.",
+      "tips": [
+        "Hold dumbbell vertically at chest",
+        "Push knees out over toes",
+        "Keep torso upright throughout"
+      ],
+      "is_timed": false,
+      "icon_filename": "db_goblet_squat_icon.svg",
+      "photo_filename": "db_goblet_squat_photo.jpg"
+    },
+    {
+      "id": "a5",
+      "code": "DBBug",
+      "name": "DB Weighted Dead Bug",
+      "description": "Core anti-extension exercise. Hold dumbbell overhead while alternating opposite arm/leg extensions.",
+      "tips": [
+        "Press lower back firmly into floor",
+        "Move slowly and controlled",
+        "Exhale as you extend limbs"
+      ],
+      "is_timed": false,
+      "is_per_side": true,
+      "icon_filename": "db_dead_bug_icon.svg",
+      "photo_filename": "db_dead_bug_photo.jpg"
+    },
+    {
+      "id": "a6",
+      "code": "DBBnt",
+      "name": "DB Bent-Over Row",
+      "description": "Bilateral rowing with both dumbbells, hinged at hips. Builds back thickness and hip hinge endurance.",
+      "tips": [
+        "Hinge until torso is 45° or lower",
+        "Lead with elbows, not hands",
+        "Squeeze shoulder blades at top"
+      ],
+      "is_timed": false,
+      "icon_filename": "db_bent_row_icon.svg",
+      "photo_filename": "db_bent_row_photo.jpg"
+    },
+    {
+      "id": "a7",
+      "code": "DBPul",
+      "name": "DB Pullover",
+      "description": "Lying on bench or floor, arc dumbbell from chest to overhead. Targets lats, serratus, and chest.",
+      "tips": [
+        "Keep slight bend in elbows throughout",
+        "Feel stretch in lats at bottom",
+        "Don't go past comfortable range"
+      ],
+      "is_timed": false,
+      "icon_filename": "db_pullover_icon.svg",
+      "photo_filename": "db_pullover_photo.jpg"
+    },
+    {
+      "id": "a8",
+      "code": "DBRDL",
+      "name": "DB Romanian Deadlift",
+      "description": "Hip hinge with dumbbells, targeting hamstrings and glutes. Key posterior chain builder.",
+      "tips": [
+        "Push hips back, don't squat down",
+        "Keep dumbbells close to legs",
+        "Feel hamstring stretch, then squeeze glutes to stand"
+      ],
+      "is_timed": false,
+      "icon_filename": "db_rdl_icon.svg",
+      "photo_filename": "db_rdl_photo.jpg"
+    },
+    {
+      "id": "a9",
+      "code": "Pallof",
+      "name": "Pallof Press",
+      "description": "Anti-rotation core exercise using resistance band. Press band away from chest and resist rotation.",
+      "tips": [
+        "Stand perpendicular to band anchor",
+        "Brace core before pressing out",
+        "Hold extended position, don't let band pull you"
+      ],
+      "is_timed": false,
+      "is_per_side": true,
+      "icon_filename": "pallof_press_icon.svg",
+      "photo_filename": "pallof_press_photo.jpg"
+    },
+    {
+      "id": "a10",
+      "code": "DBBul",
+      "name": "DB Bulgarian Split Squat",
+      "description": "Single-leg squat with rear foot elevated. Excellent for leg strength, balance, and addressing imbalances.",
+      "tips": [
+        "Most weight on front foot",
+        "Front shin stays relatively vertical",
+        "Control descent, drive through front heel"
+      ],
+      "is_timed": false,
+      "is_per_side": true,
+      "icon_filename": "db_bulgarian_icon.svg",
+      "photo_filename": "db_bulgarian_photo.jpg"
+    },
+    {
+      "id": "a11",
+      "code": "DBPuP",
+      "name": "DB Push Press",
+      "description": "Overhead press with leg drive. Use momentum from quarter-squat to press weight overhead.",
+      "tips": [
+        "Dip and drive explosively with legs",
+        "Lock out arms fully overhead",
+        "Keep core tight throughout"
+      ],
+      "is_timed": false,
+      "icon_filename": "db_push_press_icon.svg",
+      "photo_filename": "db_push_press_photo.jpg"
+    },
+    {
+      "id": "a12",
+      "code": "BFaPu",
+      "name": "Band Face Pull",
+      "description": "Pull band toward face, externally rotating shoulders. Critical for shoulder health and posture.",
+      "tips": [
+        "Pull to forehead level, not chin",
+        "Spread hands apart at end of pull",
+        "Squeeze rear delts and rhomboids"
+      ],
+      "is_timed": false,
+      "icon_filename": "band_face_pull_icon.svg",
+      "photo_filename": "band_face_pull_photo.jpg"
+    },
+    {
+      "id": "a13",
+      "code": "DBSuH",
+      "name": "DB Suitcase Hold",
+      "description": "Stand holding heavy dumbbell on one side, resisting lateral flexion. Core anti-lateral-flexion exercise.",
+      "tips": [
+        "Stand tall, don't lean away from weight",
+        "Brace core and squeeze glute on weighted side",
+        "Breathe steadily throughout hold"
+      ],
+      "is_timed": true,
+      "is_per_side": true,
+      "icon_filename": "db_suitcase_hold_icon.svg",
+      "photo_filename": "db_suitcase_hold_photo.jpg"
+    },
+    {
+      "id": "a14",
+      "code": "DBHiT",
+      "name": "DB Hip Thrust",
+      "description": "Glute-focused hip extension with upper back on bench. Primary glute builder.",
+      "tips": [
+        "Drive through heels",
+        "Squeeze glutes hard at top",
+        "Don't hyperextend lower back"
+      ],
+      "is_timed": false,
+      "icon_filename": "db_hip_thrust_icon.svg",
+      "photo_filename": "db_hip_thrust_photo.jpg"
+    },
+    {
+      "id": "a15",
+      "code": "DBInc",
+      "name": "DB Incline Press",
+      "description": "Chest press at incline angle targeting upper chest. Use pillows or cushions to create incline on floor.",
+      "tips": [
+        "Angle torso ~30-45 degrees",
+        "Press up and slightly back",
+        "Keep shoulder blades pinched"
+      ],
+      "is_timed": false,
+      "icon_filename": "db_incline_press_icon.svg",
+      "photo_filename": "db_incline_press_photo.jpg"
+    },
+    {
+      "id": "a16",
+      "code": "DBHam",
+      "name": "DB Hammer Curl",
+      "description": "Bicep curl with neutral grip. Targets brachialis and brachioradialis in addition to biceps.",
+      "tips": [
+        "Keep palms facing each other throughout",
+        "Don't swing—control the weight",
+        "Squeeze at top, slow lower"
+      ],
+      "is_timed": false,
+      "icon_filename": "db_hammer_curl_icon.svg",
+      "photo_filename": "db_hammer_curl_photo.jpg"
+    },
+    {
+      "id": "a17",
+      "code": "DBThr",
+      "name": "DB Thruster",
+      "description": "Squat to overhead press in one fluid movement. Full-body power exercise.",
+      "tips": [
+        "Squat deep, then explode up",
+        "Use leg drive to initiate press",
+        "Lock out arms fully at top"
+      ],
+      "is_timed": false,
+      "icon_filename": "db_thruster_icon.svg",
+      "photo_filename": "db_thruster_photo.jpg"
+    },
+    {
+      "id": "a18",
+      "code": "RenRw",
+      "name": "Renegade Row",
+      "description": "Row from plank position, alternating arms. Combines core stability with pulling strength.",
+      "tips": [
+        "Wide foot stance for stability",
+        "Minimize hip rotation during row",
+        "Keep core tight throughout"
+      ],
+      "is_timed": false,
+      "is_per_side": true,
+      "icon_filename": "renegade_row_icon.svg",
+      "photo_filename": "renegade_row_photo.jpg"
+    },
+    {
+      "id": "a19",
+      "code": "DBFaC",
+      "name": "DB Farmer Carry",
+      "description": "Walk while holding heavy dumbbells at sides. Builds grip, core stability, and total body strength.",
+      "tips": [
+        "Stand tall with shoulders back",
+        "Take short, controlled steps",
+        "Breathe steadily, brace core"
+      ],
+      "is_timed": true,
+      "is_per_side": false,
+      "icon_filename": "db_farmer_carry_icon.svg",
+      "photo_filename": "db_farmer_carry_photo.jpg"
+    },
+    {
+      "id": "a20",
+      "code": "DBWCh",
+      "name": "DB Woodchop",
+      "description": "Diagonal chopping motion with dumbbell. Trains rotational power and core stability.",
+      "tips": [
+        "Power comes from hips, not arms",
+        "Control the weight, don't let it swing you",
+        "Pivot on back foot"
+      ],
+      "is_timed": false,
+      "is_per_side": true,
+      "icon_filename": "db_woodchop_icon.svg",
+      "photo_filename": "db_woodchop_photo.jpg"
+    },
+    {
+      "id": "rest",
+      "code": "REST",
+      "name": "Rest",
+      "description": "Recovery period between activities or as a scheduled rest day.",
+      "tips": [],
+      "is_timed": false,
+      "icon_filename": "rest_icon.svg",
+      "photo_filename": null
+    }
+  ]
+}

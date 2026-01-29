@@ -1,0 +1,28 @@
+{
+  "weekplans": [
+    {
+      "id": "wp1",
+      "nickname": "5D DB",
+      "description": "5-Day Dumbbell Full Body",
+      "day1_dayplan_id": "dp1",
+      "day2_dayplan_id": "dp2",
+      "day3_dayplan_id": null,
+      "day4_dayplan_id": "dp3",
+      "day5_dayplan_id": "dp4",
+      "day6_dayplan_id": "dp5",
+      "day7_dayplan_id": null
+    },
+    {
+      "id": "wp2",
+      "nickname": "5D DB Deload",
+      "description": "5-Day Dumbbell Deload Week",
+      "day1_dayplan_id": "dp1",
+      "day2_dayplan_id": null,
+      "day3_dayplan_id": "dp2",
+      "day4_dayplan_id": null,
+      "day5_dayplan_id": "dp3",
+      "day6_dayplan_id": null,
+      "day7_dayplan_id": null
+    }
+  ]
+}
