@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0A0A0C;
+  --color-surface: #141418;
+  --color-surface-elevated: #1C1C21;
+  --color-surface-border: rgba(255, 255, 255, 0.08);
+  --color-accent: #00D4FF;
+  --color-accent-soft: rgba(0, 212, 255, 0.12);
+  --color-accent-muted: rgba(0, 212, 255, 0.25);
+  --color-accent-glow: rgba(0, 212, 255, 0.4);
+  --color-stage-prep: #A855F7;
+  --color-stage-work: #00D4FF;
+  --color-stage-rest: #F97316;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #A1A1AA;
+  --color-text-tertiary: #52525B;
+  --color-text-muted: #3F3F46;
+  --color-completed: #3F3F46;
+  --color-completed-text: #71717A;
+  --color-icon-exercise: #FBBF24;
+  --color-icon-core: #34D399;
+  --color-icon-rest: #F87171;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

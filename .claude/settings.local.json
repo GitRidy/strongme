@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx --yes create-preact@latest app --name strongme --lang js --no-install)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(npm:*)",
+      "Bash(node --version:*)",
+      "Bash(echo:*)",
+      "Bash(node:*)"
+    ]
+  }
+}
