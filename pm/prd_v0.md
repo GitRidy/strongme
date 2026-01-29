@@ -1,6 +1,6 @@
 # PRD v0: Minimalist Workout Timer PWA - "StrongMe"
 
-*RevF*
+*RevG*
 
 ## 1. Product Overview
 
@@ -73,14 +73,13 @@ A lightweight, mobile-first web application designed for focused workout executi
 
 Data is stored as static JSON files hosted on GitHub Pages:
 
-Base URL: https://gitridy.github.io/strongme/data/
+Base URL: https://gitridy.github.io/strongme/
 
 ```
-/data
-  /campaigns.json
-  /weekplans.json
-  /dayplans.json
-  /activities.json
+/campaigns.json
+/weekplans.json
+/dayplans.json
+/activities.json
 ```
 
 **`campaigns.json`**

@@ -50,5 +50,6 @@ npm run build    # Production build
 
 - `pm/prd_v0.md` — Full PRD with features, architecture, UI specs
 - `pm/coding_style.md` — Naming and structure conventions
-- `sample_data/` — JSON fixtures (campaigns, weekplans, dayplans, activities) with schema notes in its README
+- `sample_data/` — JSON fixtures (campaigns, weekplans, dayplans, activities) with schema notes in its README. For reference only.
+- `docs/` — root for JSON files Published to github pages. Connect to this source with the app.
 - `design/` — HTML mockup and screenshot
