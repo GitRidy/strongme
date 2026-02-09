@@ -5,7 +5,13 @@
     "region": "chest",
     "function": "push",
     "primary_group": "pectorals",
-    "secondary_groups": ["triceps", "deltoids_anterior"]
+    "secondary_groups": ["triceps", "deltoids_anterior"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["shoulder", "elbow"],
+      "concerns": "Shoulder impingement risk if descended too low; AC joint stress",
+      "recommendations": "Keep elbows at 45° angle, don't flare to 90°; dumbbells allow natural wrist rotation reducing stress"
+    }
   },
   {
     "name": "Db Incline Press",
@@ -13,7 +19,13 @@
     "region": "chest",
     "function": "push",
     "primary_group": "pectorals",
-    "secondary_groups": ["triceps", "deltoids_anterior"]
+    "secondary_groups": ["triceps", "deltoids_anterior"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["shoulder", "elbow"],
+      "concerns": "Increased shoulder flexion stress compared to flat bench",
+      "recommendations": "30-45° incline optimal; avoid going too steep"
+    }
   },
   {
     "name": "Db Decline Press",
@@ -21,7 +33,13 @@
     "region": "chest",
     "function": "push",
     "primary_group": "pectorals",
-    "secondary_groups": ["triceps"]
+    "secondary_groups": ["triceps"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["shoulder", "elbow"],
+      "concerns": "Generally shoulder-friendly; less stress than flat or incline",
+      "recommendations": "Good option for those with shoulder issues"
+    }
   },
   {
     "name": "Db Fly",
@@ -29,7 +47,13 @@
     "region": "chest",
     "function": "push",
     "primary_group": "pectorals",
-    "secondary_groups": ["deltoids_anterior"]
+    "secondary_groups": ["deltoids_anterior"],
+    "joint_impact": {
+      "score": 4,
+      "primary_joints": ["shoulder"],
+      "concerns": "High stress on shoulder joint in stretched position; AC joint stress",
+      "recommendations": "Keep slight elbow bend; don't go below shoulder level; use lighter weight"
+    }
   },
   {
     "name": "Db Incline Fly",
@@ -37,7 +61,13 @@
     "region": "chest",
     "function": "push",
     "primary_group": "pectorals",
-    "secondary_groups": ["deltoids_anterior"]
+    "secondary_groups": ["deltoids_anterior"],
+    "joint_impact": {
+      "score": 4,
+      "primary_joints": ["shoulder"],
+      "concerns": "Similar to flat fly with increased shoulder flexion stress",
+      "recommendations": "Even more caution needed; lighter weights than flat fly"
+    }
   },
   {
     "name": "Band Chest Press",
@@ -45,7 +75,13 @@
     "region": "chest",
     "function": "push",
     "primary_group": "pectorals",
-    "secondary_groups": ["triceps", "deltoids_anterior"]
+    "secondary_groups": ["triceps", "deltoids_anterior"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["shoulder", "elbow"],
+      "concerns": "Variable resistance reduces joint stress; accommodating resistance",
+      "recommendations": "Excellent joint-friendly alternative to dumbbells"
+    }
   },
   {
     "name": "Band Chest Fly",
@@ -53,7 +89,13 @@
     "region": "chest",
     "function": "push",
     "primary_group": "pectorals",
-    "secondary_groups": ["deltoids_anterior"]
+    "secondary_groups": ["deltoids_anterior"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["shoulder"],
+      "concerns": "Safer than dumbbell version; resistance decreases at stretched position",
+      "recommendations": "Great alternative to dumbbell flies"
+    }
   },
   {
     "name": "Push-up",
@@ -61,7 +103,13 @@
     "region": "chest",
     "function": "push",
     "primary_group": "pectorals",
-    "secondary_groups": ["triceps", "deltoids_anterior"]
+    "secondary_groups": ["triceps", "deltoids_anterior"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["shoulder", "elbow", "wrist"],
+      "concerns": "Wrist extension stress; scapular stability required",
+      "recommendations": "Use push-up handles or fists if wrist issues; excellent closed-chain exercise"
+    }
   },
   {
     "name": "Decline Push-up",
@@ -69,7 +117,13 @@
     "region": "chest",
     "function": "push",
     "primary_group": "pectorals",
-    "secondary_groups": ["triceps", "deltoids_anterior"]
+    "secondary_groups": ["triceps", "deltoids_anterior"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["shoulder", "elbow", "wrist"],
+      "concerns": "Increased shoulder flexion stress; more wrist load",
+      "recommendations": "Progress gradually; ensure shoulder mobility first"
+    }
   },
   {
     "name": "Incline Push-up",
@@ -77,7 +131,13 @@
     "region": "chest",
     "function": "push",
     "primary_group": "pectorals",
-    "secondary_groups": ["triceps"]
+    "secondary_groups": ["triceps"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["shoulder", "elbow", "wrist"],
+      "concerns": "Minimal; reduced load on all joints",
+      "recommendations": "Excellent starting point or regression option"
+    }
   },
   {
     "name": "Push-up Plus",
@@ -85,7 +145,13 @@
     "region": "chest",
     "function": "push",
     "primary_group": "serratus_anterior",
-    "secondary_groups": ["pectorals", "triceps"]
+    "secondary_groups": ["pectorals", "triceps"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["shoulder"],
+      "concerns": "Scapular control focus; minimal joint stress",
+      "recommendations": "Great for shoulder health and stability"
+    }
   },
   {
     "name": "Db Shoulder Press",
@@ -93,7 +159,13 @@
     "region": "shoulders",
     "function": "push",
     "primary_group": "deltoids_anterior",
-    "secondary_groups": ["triceps", "deltoids_lateral"]
+    "secondary_groups": ["triceps", "deltoids_lateral"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["shoulder", "elbow"],
+      "concerns": "Overhead pressing stress; AC joint compression; impingement risk",
+      "recommendations": "Keep neutral spine; don't hyperextend back; neutral grip reduces stress"
+    }
   },
   {
     "name": "Db Arnold Press",
@@ -101,7 +173,13 @@
     "region": "shoulders",
     "function": "push",
     "primary_group": "deltoids_anterior",
-    "secondary_groups": ["deltoids_lateral", "triceps"]
+    "secondary_groups": ["deltoids_lateral", "triceps"],
+    "joint_impact": {
+      "score": 4,
+      "primary_joints": ["shoulder", "elbow"],
+      "concerns": "Rotation through pressing motion increases shoulder stress",
+      "recommendations": "Lighter weight than standard press; ensure good shoulder mobility"
+    }
   },
   {
     "name": "Db Lateral Raise",
@@ -109,7 +187,13 @@
     "region": "shoulders",
     "function": "abduction",
     "primary_group": "deltoids_lateral",
-    "secondary_groups": ["traps"]
+    "secondary_groups": ["traps"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["shoulder"],
+      "concerns": "Subacromial impingement risk above 90°; AC joint stress",
+      "recommendations": "Stop at shoulder height; slight forward angle (scapular plane); thumbs slightly up"
+    }
   },
   {
     "name": "Db Front Raise",
@@ -117,7 +201,13 @@
     "region": "shoulders",
     "function": "push",
     "primary_group": "deltoids_anterior",
-    "secondary_groups": ["pectorals"]
+    "secondary_groups": ["pectorals"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["shoulder"],
+      "concerns": "Less stress than lateral raises; natural movement pattern",
+      "recommendations": "Stop at shoulder height; can alternate arms"
+    }
   },
   {
     "name": "Db Rear Delt Fly",
@@ -125,7 +215,13 @@
     "region": "shoulders",
     "function": "pull",
     "primary_group": "deltoids_posterior",
-    "secondary_groups": ["rhomboids"]
+    "secondary_groups": ["rhomboids"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["shoulder"],
+      "concerns": "Generally shoulder-friendly; important for shoulder balance",
+      "recommendations": "Keep slight bend in elbows; focus on squeezing shoulder blades"
+    }
   },
   {
     "name": "Band Shoulder Press",
@@ -133,7 +229,13 @@
     "region": "shoulders",
     "function": "push",
     "primary_group": "deltoids_anterior",
-    "secondary_groups": ["triceps", "deltoids_lateral"]
+    "secondary_groups": ["triceps", "deltoids_lateral"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["shoulder", "elbow"],
+      "concerns": "Accommodating resistance reduces stress; safer than dumbbells",
+      "recommendations": "Great alternative for overhead pressing"
+    }
   },
   {
     "name": "Band Lateral Raise",
@@ -141,7 +243,13 @@
     "region": "shoulders",
     "function": "abduction",
     "primary_group": "deltoids_lateral",
-    "secondary_groups": ["traps"]
+    "secondary_groups": ["traps"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["shoulder"],
+      "concerns": "Constant tension but lighter resistance at bottom reduces stress",
+      "recommendations": "Excellent for shoulder health"
+    }
   },
   {
     "name": "Band Front Raise",
@@ -149,7 +257,13 @@
     "region": "shoulders",
     "function": "push",
     "primary_group": "deltoids_anterior",
-    "secondary_groups": ["pectorals"]
+    "secondary_groups": ["pectorals"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["shoulder"],
+      "concerns": "Very low stress; controlled movement",
+      "recommendations": "Good for shoulder warm-up or rehab"
+    }
   },
   {
     "name": "Band Face Pull",
@@ -157,7 +271,13 @@
     "region": "shoulders",
     "function": "pull",
     "primary_group": "deltoids_posterior",
-    "secondary_groups": ["rhomboids", "rotator_cuff"]
+    "secondary_groups": ["rhomboids", "rotator_cuff"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["shoulder"],
+      "concerns": "Excellent for shoulder health; counteracts forward posture",
+      "recommendations": "Should be a staple; high reps possible"
+    }
   },
   {
     "name": "Band External Rotation",
@@ -165,7 +285,13 @@
     "region": "shoulders",
     "function": "rotation",
     "primary_group": "rotator_cuff",
-    "secondary_groups": ["deltoids_posterior"]
+    "secondary_groups": ["deltoids_posterior"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["shoulder"],
+      "concerns": "Therapeutic movement; minimal stress",
+      "recommendations": "Essential for rotator cuff health; use regularly"
+    }
   },
   {
     "name": "Band Internal Rotation",
@@ -173,7 +299,13 @@
     "region": "shoulders",
     "function": "rotation",
     "primary_group": "rotator_cuff",
-    "secondary_groups": ["deltoids_anterior"]
+    "secondary_groups": ["deltoids_anterior"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["shoulder"],
+      "concerns": "Balances external rotation work",
+      "recommendations": "Include for complete shoulder health"
+    }
   },
   {
     "name": "Pike Push-up",
@@ -181,7 +313,13 @@
     "region": "shoulders",
     "function": "push",
     "primary_group": "deltoids_anterior",
-    "secondary_groups": ["triceps", "deltoids_lateral"]
+    "secondary_groups": ["triceps", "deltoids_lateral"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["shoulder", "elbow", "wrist"],
+      "concerns": "Significant shoulder flexion; wrist stress",
+      "recommendations": "Ensure adequate shoulder mobility; use parallettes if wrist issues"
+    }
   },
   {
     "name": "Db Bent-Over Row",
@@ -189,7 +327,13 @@
     "region": "back",
     "function": "pull",
     "primary_group": "lats",
-    "secondary_groups": ["rhomboids", "biceps"]
+    "secondary_groups": ["rhomboids", "biceps"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["shoulder", "elbow", "lower_back"],
+      "concerns": "Lower back stress if form breaks; hip hinge required",
+      "recommendations": "Maintain neutral spine; brace core; avoid rounding"
+    }
   },
   {
     "name": "Db Single-Arm Row",
@@ -197,7 +341,13 @@
     "region": "back",
     "function": "pull",
     "primary_group": "lats",
-    "secondary_groups": ["rhomboids", "biceps"]
+    "secondary_groups": ["rhomboids", "biceps"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["shoulder", "elbow"],
+      "concerns": "Supported position reduces lower back stress",
+      "recommendations": "Excellent back exercise; very joint-friendly"
+    }
   },
   {
     "name": "Db Pullover",
@@ -205,7 +355,13 @@
     "region": "back",
     "function": "pull",
     "primary_group": "lats",
-    "secondary_groups": ["serratus_anterior", "triceps"]
+    "secondary_groups": ["serratus_anterior", "triceps"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["shoulder"],
+      "concerns": "Extreme shoulder flexion; requires good mobility",
+      "recommendations": "Don't overextend; keep ribs down; lighter weight"
+    }
   },
   {
     "name": "Db Shrug",
@@ -213,7 +369,13 @@
     "region": "back",
     "function": "pull",
     "primary_group": "traps",
-    "secondary_groups": []
+    "secondary_groups": [],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["shoulder", "cervical_spine"],
+      "concerns": "Minimal if done correctly; avoid rolling shoulders",
+      "recommendations": "Straight up and down; don't roll; neutral neck"
+    }
   },
   {
     "name": "Band Lat Pulldown",
@@ -221,7 +383,13 @@
     "region": "back",
     "function": "pull",
     "primary_group": "lats",
-    "secondary_groups": ["biceps", "rhomboids"]
+    "secondary_groups": ["biceps", "rhomboids"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["shoulder", "elbow"],
+      "concerns": "Natural pulling pattern; accommodating resistance",
+      "recommendations": "Excellent lat exercise; very shoulder-friendly"
+    }
   },
   {
     "name": "Band Seated Row",
@@ -229,7 +397,13 @@
     "region": "back",
     "function": "pull",
     "primary_group": "lats",
-    "secondary_groups": ["rhomboids", "biceps"]
+    "secondary_groups": ["rhomboids", "biceps"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["shoulder", "elbow"],
+      "concerns": "Supported position; variable resistance",
+      "recommendations": "Outstanding exercise for back and shoulder health"
+    }
   },
   {
     "name": "Band Straight-Arm Pulldown",
@@ -237,7 +411,13 @@
     "region": "back",
     "function": "pull",
     "primary_group": "lats",
-    "secondary_groups": ["triceps"]
+    "secondary_groups": ["triceps"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["shoulder"],
+      "concerns": "Controlled range; less stress than pullover",
+      "recommendations": "Great lat isolation with minimal joint stress"
+    }
   },
   {
     "name": "Band Pull-Apart",
@@ -245,7 +425,13 @@
     "region": "back",
     "function": "pull",
     "primary_group": "rhomboids",
-    "secondary_groups": ["deltoids_posterior", "traps"]
+    "secondary_groups": ["deltoids_posterior", "traps"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["shoulder"],
+      "concerns": "Extremely shoulder-friendly; corrective exercise",
+      "recommendations": "Should be done daily; excellent for posture"
+    }
   },
   {
     "name": "Inverted Row",
@@ -253,7 +439,13 @@
     "region": "back",
     "function": "pull",
     "primary_group": "lats",
-    "secondary_groups": ["rhomboids", "biceps"]
+    "secondary_groups": ["rhomboids", "biceps"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["shoulder", "elbow"],
+      "concerns": "Closed-chain exercise; very shoulder-friendly",
+      "recommendations": "Excellent pull exercise; adjust height for difficulty"
+    }
   },
   {
     "name": "Superman",
@@ -261,7 +453,13 @@
     "region": "back",
     "function": "extension",
     "primary_group": "erector_spinae",
-    "secondary_groups": ["glutes"]
+    "secondary_groups": ["glutes"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["spine", "shoulder"],
+      "concerns": "Extension pattern; good for posterior chain",
+      "recommendations": "Don't hyperextend; focus on controlled movement"
+    }
   },
   {
     "name": "Db Bicep Curl",
@@ -269,7 +467,13 @@
     "region": "arms",
     "function": "pull",
     "primary_group": "biceps",
-    "secondary_groups": ["forearms"]
+    "secondary_groups": ["forearms"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["elbow"],
+      "concerns": "Minimal if proper form; avoid swinging",
+      "recommendations": "Keep elbows stable; full ROM; avoid ego lifting"
+    }
   },
   {
     "name": "Db Hammer Curl",
@@ -277,7 +481,13 @@
     "region": "arms",
     "function": "pull",
     "primary_group": "biceps",
-    "secondary_groups": ["forearms"]
+    "secondary_groups": ["forearms"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["elbow"],
+      "concerns": "Most elbow-friendly curl variation; neutral grip",
+      "recommendations": "Excellent choice for elbow health"
+    }
   },
   {
     "name": "Db Incline Curl",
@@ -285,7 +495,13 @@
     "region": "arms",
     "function": "pull",
     "primary_group": "biceps",
-    "secondary_groups": ["forearms"]
+    "secondary_groups": ["forearms"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["elbow", "shoulder"],
+      "concerns": "Increased shoulder flexion; stretch on biceps",
+      "recommendations": "Don't overextend; controlled movement"
+    }
   },
   {
     "name": "Db Concentration Curl",
@@ -293,7 +509,13 @@
     "region": "arms",
     "function": "pull",
     "primary_group": "biceps",
-    "secondary_groups": ["forearms"]
+    "secondary_groups": ["forearms"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["elbow"],
+      "concerns": "Supported; strict form; minimal stress",
+      "recommendations": "Great for isolation; very controlled"
+    }
   },
   {
     "name": "Db Wrist Curl",
@@ -301,7 +523,13 @@
     "region": "arms",
     "function": "flexion",
     "primary_group": "forearms",
-    "secondary_groups": []
+    "secondary_groups": [],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["wrist"],
+      "concerns": "Small muscles; easy to overdo",
+      "recommendations": "Light weight; high reps; avoid if wrist pain"
+    }
   },
   {
     "name": "Db Reverse Wrist Curl",
@@ -309,7 +537,13 @@
     "region": "arms",
     "function": "extension",
     "primary_group": "forearms",
-    "secondary_groups": []
+    "secondary_groups": [],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["wrist"],
+      "concerns": "Important for balance; lighter than wrist curl",
+      "recommendations": "Essential for complete forearm development"
+    }
   },
   {
     "name": "Db Overhead Tricep Extension",
@@ -317,7 +551,13 @@
     "region": "arms",
     "function": "push",
     "primary_group": "triceps",
-    "secondary_groups": []
+    "secondary_groups": [],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["elbow", "shoulder"],
+      "concerns": "Elbow stress at bottom; shoulder flexion stress",
+      "recommendations": "Keep elbows close; don't overextend; moderate weight"
+    }
   },
   {
     "name": "Db Skull Crusher",
@@ -325,7 +565,13 @@
     "region": "arms",
     "function": "push",
     "primary_group": "triceps",
-    "secondary_groups": []
+    "secondary_groups": [],
+    "joint_impact": {
+      "score": 4,
+      "primary_joints": ["elbow"],
+      "concerns": "High elbow stress; easy to overload",
+      "recommendations": "Use strict form; lighter weight; consider alternatives if elbow issues"
+    }
   },
   {
     "name": "Db Kickback",
@@ -333,7 +579,13 @@
     "region": "arms",
     "function": "push",
     "primary_group": "triceps",
-    "secondary_groups": []
+    "secondary_groups": [],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["elbow", "shoulder"],
+      "concerns": "Supported position; lighter weights typically",
+      "recommendations": "Good alternative to overhead extensions"
+    }
   },
   {
     "name": "Band Bicep Curl",
@@ -341,7 +593,13 @@
     "region": "arms",
     "function": "pull",
     "primary_group": "biceps",
-    "secondary_groups": ["forearms"]
+    "secondary_groups": ["forearms"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["elbow"],
+      "concerns": "Very low stress; accommodating resistance",
+      "recommendations": "Excellent for higher reps; joint-friendly"
+    }
   },
   {
     "name": "Band Hammer Curl",
@@ -349,7 +607,13 @@
     "region": "arms",
     "function": "pull",
     "primary_group": "biceps",
-    "secondary_groups": ["forearms"]
+    "secondary_groups": ["forearms"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["elbow"],
+      "concerns": "Safest curl variation",
+      "recommendations": "Can do high volume safely"
+    }
   },
   {
     "name": "Band Tricep Pushdown",
@@ -357,7 +621,13 @@
     "region": "arms",
     "function": "push",
     "primary_group": "triceps",
-    "secondary_groups": []
+    "secondary_groups": [],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["elbow"],
+      "concerns": "Very elbow-friendly; natural movement",
+      "recommendations": "Excellent tricep exercise for longevity"
+    }
   },
   {
     "name": "Band Overhead Tricep Extension",
@@ -365,7 +635,13 @@
     "region": "arms",
     "function": "push",
     "primary_group": "triceps",
-    "secondary_groups": []
+    "secondary_groups": [],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["elbow", "shoulder"],
+      "concerns": "Less stress than dumbbell version",
+      "recommendations": "Good alternative with less joint stress"
+    }
   },
   {
     "name": "Diamond Push-up",
@@ -373,7 +649,13 @@
     "region": "arms",
     "function": "push",
     "primary_group": "triceps",
-    "secondary_groups": ["pectorals", "deltoids_anterior"]
+    "secondary_groups": ["pectorals", "deltoids_anterior"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["elbow", "wrist", "shoulder"],
+      "concerns": "High elbow stress; wrist stress in narrow position",
+      "recommendations": "Progress gradually; ensure wrist mobility"
+    }
   },
   {
     "name": "Bench Dip",
@@ -381,7 +663,13 @@
     "region": "arms",
     "function": "push",
     "primary_group": "triceps",
-    "secondary_groups": ["deltoids_anterior"]
+    "secondary_groups": ["deltoids_anterior"],
+    "joint_impact": {
+      "score": 4,
+      "primary_joints": ["shoulder", "elbow"],
+      "concerns": "Extreme shoulder extension; AC joint stress; elbow stress",
+      "recommendations": "Avoid if shoulder issues; feet on floor safer than elevated"
+    }
   },
   {
     "name": "Db Russian Twist",
@@ -389,7 +677,13 @@
     "region": "core",
     "function": "rotation",
     "primary_group": "obliques",
-    "secondary_groups": ["abs"]
+    "secondary_groups": ["abs"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["spine", "hip"],
+      "concerns": "Spinal rotation under load; lower back stress if form breaks",
+      "recommendations": "Keep neutral spine; don't round; moderate weight"
+    }
   },
   {
     "name": "Db Side Bend",
@@ -397,7 +691,13 @@
     "region": "core",
     "function": "lateral_flexion",
     "primary_group": "obliques",
-    "secondary_groups": []
+    "secondary_groups": [],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["spine"],
+      "concerns": "Can compress spine if too heavy; one-sided loading",
+      "recommendations": "Light weight; focus on stretch and contraction"
+    }
   },
   {
     "name": "Db Woodchop",
@@ -405,7 +705,13 @@
     "region": "core",
     "function": "rotation",
     "primary_group": "obliques",
-    "secondary_groups": ["abs"]
+    "secondary_groups": ["abs"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["spine", "shoulder", "hip"],
+      "concerns": "Multi-planar movement; requires coordination",
+      "recommendations": "Start light; focus on hip rotation; controlled movement"
+    }
   },
   {
     "name": "Band Pallof Press",
@@ -413,7 +719,13 @@
     "region": "core",
     "function": "anti_rotation",
     "primary_group": "obliques",
-    "secondary_groups": ["abs"]
+    "secondary_groups": ["abs"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["spine"],
+      "concerns": "Very low stress; excellent core stability exercise",
+      "recommendations": "Should be a staple; perfect for core health"
+    }
   },
   {
     "name": "Band Woodchop",
@@ -421,7 +733,13 @@
     "region": "core",
     "function": "rotation",
     "primary_group": "obliques",
-    "secondary_groups": ["abs"]
+    "secondary_groups": ["abs"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["spine", "shoulder", "hip"],
+      "concerns": "Safer than dumbbell version; accommodating resistance",
+      "recommendations": "Excellent functional core exercise"
+    }
   },
   {
     "name": "Plank",
@@ -429,7 +747,13 @@
     "region": "core",
     "function": "isometric",
     "primary_group": "abs",
-    "secondary_groups": ["obliques"]
+    "secondary_groups": ["obliques"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["shoulder", "spine"],
+      "concerns": "Isometric; minimal joint stress; excellent for core",
+      "recommendations": "Essential exercise; focus on quality over duration"
+    }
   },
   {
     "name": "Side Plank",
@@ -437,7 +761,13 @@
     "region": "core",
     "function": "isometric",
     "primary_group": "obliques",
-    "secondary_groups": ["abs"]
+    "secondary_groups": ["abs"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["shoulder", "spine"],
+      "concerns": "Shoulder stability required but low stress",
+      "recommendations": "Critical for oblique and lateral chain strength"
+    }
   },
   {
     "name": "Dead Bug",
@@ -445,7 +775,13 @@
     "region": "core",
     "function": "anti_extension",
     "primary_group": "abs",
-    "secondary_groups": ["hip_flexors"]
+    "secondary_groups": ["hip_flexors"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["spine", "hip", "shoulder"],
+      "concerns": "Extremely low stress; therapeutic",
+      "recommendations": "Perfect for core stability; can do daily"
+    }
   },
   {
     "name": "Bird Dog",
@@ -453,7 +789,13 @@
     "region": "core",
     "function": "anti_extension",
     "primary_group": "abs",
-    "secondary_groups": ["erector_spinae", "glutes"]
+    "secondary_groups": ["erector_spinae", "glutes"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["spine", "hip", "shoulder"],
+      "concerns": "Excellent for anti-rotation and stability",
+      "recommendations": "Should be part of regular routine; great for back health"
+    }
   },
   {
     "name": "Hollow Body Hold",
@@ -461,7 +803,13 @@
     "region": "core",
     "function": "isometric",
     "primary_group": "abs",
-    "secondary_groups": ["hip_flexors"]
+    "secondary_groups": ["hip_flexors"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["spine", "hip"],
+      "concerns": "Low stress but requires good control",
+      "recommendations": "Foundational core exercise; scale with bent knees if needed"
+    }
   },
   {
     "name": "Hanging Leg Raise",
@@ -469,7 +817,13 @@
     "region": "core",
     "function": "flexion",
     "primary_group": "abs",
-    "secondary_groups": ["hip_flexors"]
+    "secondary_groups": ["hip_flexors"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["shoulder", "hip", "spine"],
+      "concerns": "Shoulder stress from hanging; hip flexor dominant",
+      "recommendations": "Ensure shoulder stability; avoid swinging"
+    }
   },
   {
     "name": "Lying Leg Raise",
@@ -477,7 +831,13 @@
     "region": "core",
     "function": "flexion",
     "primary_group": "abs",
-    "secondary_groups": ["hip_flexors"]
+    "secondary_groups": ["hip_flexors"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["hip", "spine"],
+      "concerns": "Lower back stress if pelvis tilts; hip flexor dominant",
+      "recommendations": "Keep lower back flat; hands under sacrum if needed"
+    }
   },
   {
     "name": "Bicycle Crunch",
@@ -485,7 +845,13 @@
     "region": "core",
     "function": "rotation",
     "primary_group": "obliques",
-    "secondary_groups": ["abs", "hip_flexors"]
+    "secondary_groups": ["abs", "hip_flexors"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["spine", "hip"],
+      "concerns": "Spinal rotation with flexion; neck stress if pulling on head",
+      "recommendations": "Don't pull on neck; controlled movement; quality over speed"
+    }
   },
   {
     "name": "Mountain Climber",
@@ -493,7 +859,13 @@
     "region": "core",
     "function": "flexion",
     "primary_group": "hip_flexors",
-    "secondary_groups": ["abs", "deltoids_anterior"]
+    "secondary_groups": ["abs", "deltoids_anterior"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["shoulder", "hip", "wrist"],
+      "concerns": "Dynamic movement; wrist stress; hip flexor dominant",
+      "recommendations": "Keep hips level; quality over speed; scale to slow tempo"
+    }
   },
   {
     "name": "Db Goblet Squat",
@@ -501,7 +873,13 @@
     "region": "legs",
     "function": "squat",
     "primary_group": "quads",
-    "secondary_groups": ["glutes"]
+    "secondary_groups": ["glutes"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["knee", "hip", "ankle"],
+      "concerns": "Front-loaded; encourages upright posture; less back stress",
+      "recommendations": "Excellent squat variation; very joint-friendly; great for mobility"
+    }
   },
   {
     "name": "Db Split Squat",
@@ -509,7 +887,13 @@
     "region": "legs",
     "function": "lunge",
     "primary_group": "quads",
-    "secondary_groups": ["glutes"]
+    "secondary_groups": ["glutes"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["knee", "hip", "ankle"],
+      "concerns": "Unilateral; generally knee-friendly; good for imbalances",
+      "recommendations": "Excellent for knee health; easier to control than lunges"
+    }
   },
   {
     "name": "Db Bulgarian Split Squat",
@@ -517,7 +901,13 @@
     "region": "legs",
     "function": "lunge",
     "primary_group": "quads",
-    "secondary_groups": ["glutes"]
+    "secondary_groups": ["glutes"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["knee", "hip", "ankle"],
+      "concerns": "Significant knee flexion; requires mobility and balance",
+      "recommendations": "Progress gradually; ensure knee tracks over toes; very effective"
+    }
   },
   {
     "name": "Db Forward Lunge",
@@ -525,7 +915,13 @@
     "region": "legs",
     "function": "lunge",
     "primary_group": "quads",
-    "secondary_groups": ["glutes"]
+    "secondary_groups": ["glutes"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["knee", "hip", "ankle"],
+      "concerns": "Deceleration stress on front knee; requires control",
+      "recommendations": "Step distance affects knee stress; shorter steps if knee issues"
+    }
   },
   {
     "name": "Db Reverse Lunge",
@@ -533,7 +929,13 @@
     "region": "legs",
     "function": "lunge",
     "primary_group": "quads",
-    "secondary_groups": ["glutes"]
+    "secondary_groups": ["glutes"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["knee", "hip", "ankle"],
+      "concerns": "Less knee stress than forward lunge; more controlled",
+      "recommendations": "Excellent lunge variation; easier on knees"
+    }
   },
   {
     "name": "Db Step-Up",
@@ -541,7 +943,13 @@
     "region": "legs",
     "function": "lunge",
     "primary_group": "quads",
-    "secondary_groups": ["glutes"]
+    "secondary_groups": ["glutes"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["knee", "hip", "ankle"],
+      "concerns": "Knee stress depends on step height; functional movement",
+      "recommendations": "Lower step if knee issues; very effective for glutes"
+    }
   },
   {
     "name": "Band Squat",
@@ -549,7 +957,13 @@
     "region": "legs",
     "function": "squat",
     "primary_group": "quads",
-    "secondary_groups": ["glutes"]
+    "secondary_groups": ["glutes"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["knee", "hip", "ankle"],
+      "concerns": "Accommodating resistance; good for technique",
+      "recommendations": "Great for learning squat pattern; low joint stress"
+    }
   },
   {
     "name": "Bodyweight Squat",
@@ -557,7 +971,13 @@
     "region": "legs",
     "function": "squat",
     "primary_group": "quads",
-    "secondary_groups": ["glutes"]
+    "secondary_groups": ["glutes"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["knee", "hip", "ankle"],
+      "concerns": "Minimal load; fundamental movement",
+      "recommendations": "Should be able to perform pain-free; foundation for all squats"
+    }
   },
   {
     "name": "Jump Squat",
@@ -565,7 +985,13 @@
     "region": "legs",
     "function": "squat",
     "primary_group": "quads",
-    "secondary_groups": ["glutes", "calves"]
+    "secondary_groups": ["glutes", "calves"],
+    "joint_impact": {
+      "score": 5,
+      "primary_joints": ["knee", "hip", "ankle"],
+      "concerns": "High impact forces; landing stress; not recommended for 50+",
+      "recommendations": "Consider alternatives; if done, low reps, perfect landings essential"
+    }
   },
   {
     "name": "Pistol Squat",
@@ -573,7 +999,13 @@
     "region": "legs",
     "function": "squat",
     "primary_group": "quads",
-    "secondary_groups": ["glutes"]
+    "secondary_groups": ["glutes"],
+    "joint_impact": {
+      "score": 4,
+      "primary_joints": ["knee", "hip", "ankle"],
+      "concerns": "Extreme knee flexion; significant joint stress; advanced skill",
+      "recommendations": "Requires excellent mobility; regression to assisted version recommended"
+    }
   },
   {
     "name": "Sissy Squat",
@@ -581,7 +1013,13 @@
     "region": "legs",
     "function": "squat",
     "primary_group": "quads",
-    "secondary_groups": ["hip_flexors"]
+    "secondary_groups": ["hip_flexors"],
+    "joint_impact": {
+      "score": 5,
+      "primary_joints": ["knee"],
+      "concerns": "Extreme anterior knee stress; high patellofemoral forces",
+      "recommendations": "Generally not recommended for 50+; many safer alternatives"
+    }
   },
   {
     "name": "Wall Sit",
@@ -589,7 +1027,13 @@
     "region": "legs",
     "function": "isometric",
     "primary_group": "quads",
-    "secondary_groups": ["glutes"]
+    "secondary_groups": ["glutes"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["knee", "hip"],
+      "concerns": "Isometric; minimal stress at 90° position",
+      "recommendations": "Good for endurance; avoid if knee pain"
+    }
   },
   {
     "name": "Db Romanian Deadlift",
@@ -597,7 +1041,13 @@
     "region": "legs",
     "function": "hinge",
     "primary_group": "hamstrings",
-    "secondary_groups": ["glutes", "erector_spinae"]
+    "secondary_groups": ["glutes", "erector_spinae"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["hip", "spine", "knee"],
+      "concerns": "Posterior chain focus; less spinal load than conventional deadlift",
+      "recommendations": "Excellent hinge pattern; key for hamstring/glute development"
+    }
   },
   {
     "name": "Db Single-Leg RDL",
@@ -605,7 +1055,13 @@
     "region": "legs",
     "function": "hinge",
     "primary_group": "hamstrings",
-    "secondary_groups": ["glutes"]
+    "secondary_groups": ["glutes"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["hip", "ankle", "spine"],
+      "concerns": "Balance requirement; ankle stability needed",
+      "recommendations": "Excellent for balance and posterior chain; scale with support"
+    }
   },
   {
     "name": "Db Stiff-Leg Deadlift",
@@ -613,7 +1069,13 @@
     "region": "legs",
     "function": "hinge",
     "primary_group": "hamstrings",
-    "secondary_groups": ["glutes", "erector_spinae"]
+    "secondary_groups": ["glutes", "erector_spinae"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["hip", "spine", "knee"],
+      "concerns": "More lower back stress than RDL; requires good hamstring flexibility",
+      "recommendations": "Keep slight knee bend; don't round spine"
+    }
   },
   {
     "name": "Db Hip Thrust",
@@ -621,7 +1083,13 @@
     "region": "legs",
     "function": "hinge",
     "primary_group": "glutes",
-    "secondary_groups": ["hamstrings"]
+    "secondary_groups": ["hamstrings"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["hip", "spine"],
+      "concerns": "Supported position; excellent glute exercise; minimal stress",
+      "recommendations": "Outstanding exercise; very joint-friendly; great for longevity"
+    }
   },
   {
     "name": "Db Sumo Squat",
@@ -629,7 +1097,13 @@
     "region": "legs",
     "function": "squat",
     "primary_group": "glutes",
-    "secondary_groups": ["adductors", "quads"]
+    "secondary_groups": ["adductors", "quads"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["hip", "knee", "ankle"],
+      "concerns": "Wide stance; different stress pattern than regular squat",
+      "recommendations": "Good alternative for hip mobility; easier on lower back"
+    }
   },
   {
     "name": "Db Calf Raise",
@@ -637,7 +1111,13 @@
     "region": "legs",
     "function": "push",
     "primary_group": "calves",
-    "secondary_groups": []
+    "secondary_groups": [],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["ankle"],
+      "concerns": "Minimal; controlled movement",
+      "recommendations": "Full ROM important; balance carefully with weight"
+    }
   },
   {
     "name": "Band Good Morning",
@@ -645,7 +1125,13 @@
     "region": "legs",
     "function": "hinge",
     "primary_group": "hamstrings",
-    "secondary_groups": ["glutes", "erector_spinae"]
+    "secondary_groups": ["glutes", "erector_spinae"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["hip", "spine"],
+      "concerns": "Hinge pattern; accommodating resistance reduces stress",
+      "recommendations": "Excellent for posterior chain; teach hinge pattern"
+    }
   },
   {
     "name": "Band Pull-Through",
@@ -653,7 +1139,13 @@
     "region": "legs",
     "function": "hinge",
     "primary_group": "glutes",
-    "secondary_groups": ["hamstrings"]
+    "secondary_groups": ["hamstrings"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["hip"],
+      "concerns": "Very low stress; teaches hip hinge",
+      "recommendations": "Excellent preparatory exercise; great for glute activation"
+    }
   },
   {
     "name": "Band Glute Kickback",
@@ -661,7 +1153,13 @@
     "region": "legs",
     "function": "hinge",
     "primary_group": "glutes",
-    "secondary_groups": ["hamstrings"]
+    "secondary_groups": ["hamstrings"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["hip"],
+      "concerns": "Minimal stress; isolation movement",
+      "recommendations": "Good for glute activation; can do high reps"
+    }
   },
   {
     "name": "Band Clamshell",
@@ -669,7 +1167,13 @@
     "region": "legs",
     "function": "abduction",
     "primary_group": "abductors",
-    "secondary_groups": ["glutes"]
+    "secondary_groups": ["glutes"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["hip"],
+      "concerns": "Very low stress; therapeutic",
+      "recommendations": "Essential for hip health; should be done regularly"
+    }
   },
   {
     "name": "Band Lateral Walk",
@@ -677,7 +1181,13 @@
     "region": "legs",
     "function": "abduction",
     "primary_group": "abductors",
-    "secondary_groups": ["glutes"]
+    "secondary_groups": ["glutes"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["hip", "knee"],
+      "concerns": "Minimal stress; excellent for hip stability",
+      "recommendations": "Great warm-up; important for knee health"
+    }
   },
   {
     "name": "Glute Bridge",
@@ -685,7 +1195,13 @@
     "region": "legs",
     "function": "hinge",
     "primary_group": "glutes",
-    "secondary_groups": ["hamstrings"]
+    "secondary_groups": ["hamstrings"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["hip", "spine"],
+      "concerns": "Extremely low stress; foundational movement",
+      "recommendations": "Should be a staple; excellent for back and hip health"
+    }
   },
   {
     "name": "Single-Leg Glute Bridge",
@@ -693,7 +1209,13 @@
     "region": "legs",
     "function": "hinge",
     "primary_group": "glutes",
-    "secondary_groups": ["hamstrings"]
+    "secondary_groups": ["hamstrings"],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["hip", "spine"],
+      "concerns": "More demanding but still low stress",
+      "recommendations": "Progress from double-leg; excellent for imbalances"
+    }
   },
   {
     "name": "Nordic Curl",
@@ -701,7 +1223,13 @@
     "region": "legs",
     "function": "flexion",
     "primary_group": "hamstrings",
-    "secondary_groups": ["glutes"]
+    "secondary_groups": ["glutes"],
+    "joint_impact": {
+      "score": 4,
+      "primary_joints": ["knee"],
+      "concerns": "Extreme eccentric load on hamstrings; knee stress",
+      "recommendations": "Excellent but demanding; scale with band assistance; progress slowly"
+    }
   },
   {
     "name": "Single-Leg Calf Raise",
@@ -709,7 +1237,13 @@
     "region": "legs",
     "function": "push",
     "primary_group": "calves",
-    "secondary_groups": []
+    "secondary_groups": [],
+    "joint_impact": {
+      "score": 2,
+      "primary_joints": ["ankle"],
+      "concerns": "Balance required; minimal stress",
+      "recommendations": "Good progression from double-leg; work on stability"
+    }
   },
   {
     "name": "Side-Lying Leg Raise",
@@ -717,7 +1251,13 @@
     "region": "legs",
     "function": "abduction",
     "primary_group": "abductors",
-    "secondary_groups": ["hip_flexors"]
+    "secondary_groups": ["hip_flexors"],
+    "joint_impact": {
+      "score": 1,
+      "primary_joints": ["hip"],
+      "concerns": "Very low stress; isolation movement",
+      "recommendations": "Good for hip health; can do high reps"
+    }
   },
   {
     "name": "Copenhagen Plank",
@@ -725,6 +1265,12 @@
     "region": "legs",
     "function": "isometric",
     "primary_group": "adductors",
-    "secondary_groups": ["obliques"]
+    "secondary_groups": ["obliques"],
+    "joint_impact": {
+      "score": 3,
+      "primary_joints": ["hip", "shoulder", "spine"],
+      "concerns": "Advanced exercise; significant adductor load",
+      "recommendations": "Progress gradually; excellent for adductor strength"
+    }
   }
 ]
