@@ -1,0 +1,730 @@
+[
+  {
+    "name": "Db Bench Press",
+    "type": "db",
+    "region": "chest",
+    "function": "push",
+    "primary_group": "pectorals",
+    "secondary_groups": ["triceps", "deltoids_anterior"]
+  },
+  {
+    "name": "Db Incline Press",
+    "type": "db",
+    "region": "chest",
+    "function": "push",
+    "primary_group": "pectorals",
+    "secondary_groups": ["triceps", "deltoids_anterior"]
+  },
+  {
+    "name": "Db Decline Press",
+    "type": "db",
+    "region": "chest",
+    "function": "push",
+    "primary_group": "pectorals",
+    "secondary_groups": ["triceps"]
+  },
+  {
+    "name": "Db Fly",
+    "type": "db",
+    "region": "chest",
+    "function": "push",
+    "primary_group": "pectorals",
+    "secondary_groups": ["deltoids_anterior"]
+  },
+  {
+    "name": "Db Incline Fly",
+    "type": "db",
+    "region": "chest",
+    "function": "push",
+    "primary_group": "pectorals",
+    "secondary_groups": ["deltoids_anterior"]
+  },
+  {
+    "name": "Band Chest Press",
+    "type": "band",
+    "region": "chest",
+    "function": "push",
+    "primary_group": "pectorals",
+    "secondary_groups": ["triceps", "deltoids_anterior"]
+  },
+  {
+    "name": "Band Chest Fly",
+    "type": "band",
+    "region": "chest",
+    "function": "push",
+    "primary_group": "pectorals",
+    "secondary_groups": ["deltoids_anterior"]
+  },
+  {
+    "name": "Push-up",
+    "type": "cali",
+    "region": "chest",
+    "function": "push",
+    "primary_group": "pectorals",
+    "secondary_groups": ["triceps", "deltoids_anterior"]
+  },
+  {
+    "name": "Decline Push-up",
+    "type": "cali",
+    "region": "chest",
+    "function": "push",
+    "primary_group": "pectorals",
+    "secondary_groups": ["triceps", "deltoids_anterior"]
+  },
+  {
+    "name": "Incline Push-up",
+    "type": "cali",
+    "region": "chest",
+    "function": "push",
+    "primary_group": "pectorals",
+    "secondary_groups": ["triceps"]
+  },
+  {
+    "name": "Push-up Plus",
+    "type": "cali",
+    "region": "chest",
+    "function": "push",
+    "primary_group": "serratus_anterior",
+    "secondary_groups": ["pectorals", "triceps"]
+  },
+  {
+    "name": "Db Shoulder Press",
+    "type": "db",
+    "region": "shoulders",
+    "function": "push",
+    "primary_group": "deltoids_anterior",
+    "secondary_groups": ["triceps", "deltoids_lateral"]
+  },
+  {
+    "name": "Db Arnold Press",
+    "type": "db",
+    "region": "shoulders",
+    "function": "push",
+    "primary_group": "deltoids_anterior",
+    "secondary_groups": ["deltoids_lateral", "triceps"]
+  },
+  {
+    "name": "Db Lateral Raise",
+    "type": "db",
+    "region": "shoulders",
+    "function": "abduction",
+    "primary_group": "deltoids_lateral",
+    "secondary_groups": ["traps"]
+  },
+  {
+    "name": "Db Front Raise",
+    "type": "db",
+    "region": "shoulders",
+    "function": "push",
+    "primary_group": "deltoids_anterior",
+    "secondary_groups": ["pectorals"]
+  },
+  {
+    "name": "Db Rear Delt Fly",
+    "type": "db",
+    "region": "shoulders",
+    "function": "pull",
+    "primary_group": "deltoids_posterior",
+    "secondary_groups": ["rhomboids"]
+  },
+  {
+    "name": "Band Shoulder Press",
+    "type": "band",
+    "region": "shoulders",
+    "function": "push",
+    "primary_group": "deltoids_anterior",
+    "secondary_groups": ["triceps", "deltoids_lateral"]
+  },
+  {
+    "name": "Band Lateral Raise",
+    "type": "band",
+    "region": "shoulders",
+    "function": "abduction",
+    "primary_group": "deltoids_lateral",
+    "secondary_groups": ["traps"]
+  },
+  {
+    "name": "Band Front Raise",
+    "type": "band",
+    "region": "shoulders",
+    "function": "push",
+    "primary_group": "deltoids_anterior",
+    "secondary_groups": ["pectorals"]
+  },
+  {
+    "name": "Band Face Pull",
+    "type": "band",
+    "region": "shoulders",
+    "function": "pull",
+    "primary_group": "deltoids_posterior",
+    "secondary_groups": ["rhomboids", "rotator_cuff"]
+  },
+  {
+    "name": "Band External Rotation",
+    "type": "band",
+    "region": "shoulders",
+    "function": "rotation",
+    "primary_group": "rotator_cuff",
+    "secondary_groups": ["deltoids_posterior"]
+  },
+  {
+    "name": "Band Internal Rotation",
+    "type": "band",
+    "region": "shoulders",
+    "function": "rotation",
+    "primary_group": "rotator_cuff",
+    "secondary_groups": ["deltoids_anterior"]
+  },
+  {
+    "name": "Pike Push-up",
+    "type": "cali",
+    "region": "shoulders",
+    "function": "push",
+    "primary_group": "deltoids_anterior",
+    "secondary_groups": ["triceps", "deltoids_lateral"]
+  },
+  {
+    "name": "Db Bent-Over Row",
+    "type": "db",
+    "region": "back",
+    "function": "pull",
+    "primary_group": "lats",
+    "secondary_groups": ["rhomboids", "biceps"]
+  },
+  {
+    "name": "Db Single-Arm Row",
+    "type": "db",
+    "region": "back",
+    "function": "pull",
+    "primary_group": "lats",
+    "secondary_groups": ["rhomboids", "biceps"]
+  },
+  {
+    "name": "Db Pullover",
+    "type": "db",
+    "region": "back",
+    "function": "pull",
+    "primary_group": "lats",
+    "secondary_groups": ["serratus_anterior", "triceps"]
+  },
+  {
+    "name": "Db Shrug",
+    "type": "db",
+    "region": "back",
+    "function": "pull",
+    "primary_group": "traps",
+    "secondary_groups": []
+  },
+  {
+    "name": "Band Lat Pulldown",
+    "type": "band",
+    "region": "back",
+    "function": "pull",
+    "primary_group": "lats",
+    "secondary_groups": ["biceps", "rhomboids"]
+  },
+  {
+    "name": "Band Seated Row",
+    "type": "band",
+    "region": "back",
+    "function": "pull",
+    "primary_group": "lats",
+    "secondary_groups": ["rhomboids", "biceps"]
+  },
+  {
+    "name": "Band Straight-Arm Pulldown",
+    "type": "band",
+    "region": "back",
+    "function": "pull",
+    "primary_group": "lats",
+    "secondary_groups": ["triceps"]
+  },
+  {
+    "name": "Band Pull-Apart",
+    "type": "band",
+    "region": "back",
+    "function": "pull",
+    "primary_group": "rhomboids",
+    "secondary_groups": ["deltoids_posterior", "traps"]
+  },
+  {
+    "name": "Inverted Row",
+    "type": "cali",
+    "region": "back",
+    "function": "pull",
+    "primary_group": "lats",
+    "secondary_groups": ["rhomboids", "biceps"]
+  },
+  {
+    "name": "Superman",
+    "type": "cali",
+    "region": "back",
+    "function": "extension",
+    "primary_group": "erector_spinae",
+    "secondary_groups": ["glutes"]
+  },
+  {
+    "name": "Db Bicep Curl",
+    "type": "db",
+    "region": "arms",
+    "function": "pull",
+    "primary_group": "biceps",
+    "secondary_groups": ["forearms"]
+  },
+  {
+    "name": "Db Hammer Curl",
+    "type": "db",
+    "region": "arms",
+    "function": "pull",
+    "primary_group": "biceps",
+    "secondary_groups": ["forearms"]
+  },
+  {
+    "name": "Db Incline Curl",
+    "type": "db",
+    "region": "arms",
+    "function": "pull",
+    "primary_group": "biceps",
+    "secondary_groups": ["forearms"]
+  },
+  {
+    "name": "Db Concentration Curl",
+    "type": "db",
+    "region": "arms",
+    "function": "pull",
+    "primary_group": "biceps",
+    "secondary_groups": ["forearms"]
+  },
+  {
+    "name": "Db Wrist Curl",
+    "type": "db",
+    "region": "arms",
+    "function": "flexion",
+    "primary_group": "forearms",
+    "secondary_groups": []
+  },
+  {
+    "name": "Db Reverse Wrist Curl",
+    "type": "db",
+    "region": "arms",
+    "function": "extension",
+    "primary_group": "forearms",
+    "secondary_groups": []
+  },
+  {
+    "name": "Db Overhead Tricep Extension",
+    "type": "db",
+    "region": "arms",
+    "function": "push",
+    "primary_group": "triceps",
+    "secondary_groups": []
+  },
+  {
+    "name": "Db Skull Crusher",
+    "type": "db",
+    "region": "arms",
+    "function": "push",
+    "primary_group": "triceps",
+    "secondary_groups": []
+  },
+  {
+    "name": "Db Kickback",
+    "type": "db",
+    "region": "arms",
+    "function": "push",
+    "primary_group": "triceps",
+    "secondary_groups": []
+  },
+  {
+    "name": "Band Bicep Curl",
+    "type": "band",
+    "region": "arms",
+    "function": "pull",
+    "primary_group": "biceps",
+    "secondary_groups": ["forearms"]
+  },
+  {
+    "name": "Band Hammer Curl",
+    "type": "band",
+    "region": "arms",
+    "function": "pull",
+    "primary_group": "biceps",
+    "secondary_groups": ["forearms"]
+  },
+  {
+    "name": "Band Tricep Pushdown",
+    "type": "band",
+    "region": "arms",
+    "function": "push",
+    "primary_group": "triceps",
+    "secondary_groups": []
+  },
+  {
+    "name": "Band Overhead Tricep Extension",
+    "type": "band",
+    "region": "arms",
+    "function": "push",
+    "primary_group": "triceps",
+    "secondary_groups": []
+  },
+  {
+    "name": "Diamond Push-up",
+    "type": "cali",
+    "region": "arms",
+    "function": "push",
+    "primary_group": "triceps",
+    "secondary_groups": ["pectorals", "deltoids_anterior"]
+  },
+  {
+    "name": "Bench Dip",
+    "type": "cali",
+    "region": "arms",
+    "function": "push",
+    "primary_group": "triceps",
+    "secondary_groups": ["deltoids_anterior"]
+  },
+  {
+    "name": "Db Russian Twist",
+    "type": "db",
+    "region": "core",
+    "function": "rotation",
+    "primary_group": "obliques",
+    "secondary_groups": ["abs"]
+  },
+  {
+    "name": "Db Side Bend",
+    "type": "db",
+    "region": "core",
+    "function": "lateral_flexion",
+    "primary_group": "obliques",
+    "secondary_groups": []
+  },
+  {
+    "name": "Db Woodchop",
+    "type": "db",
+    "region": "core",
+    "function": "rotation",
+    "primary_group": "obliques",
+    "secondary_groups": ["abs"]
+  },
+  {
+    "name": "Band Pallof Press",
+    "type": "band",
+    "region": "core",
+    "function": "anti_rotation",
+    "primary_group": "obliques",
+    "secondary_groups": ["abs"]
+  },
+  {
+    "name": "Band Woodchop",
+    "type": "band",
+    "region": "core",
+    "function": "rotation",
+    "primary_group": "obliques",
+    "secondary_groups": ["abs"]
+  },
+  {
+    "name": "Plank",
+    "type": "cali",
+    "region": "core",
+    "function": "isometric",
+    "primary_group": "abs",
+    "secondary_groups": ["obliques"]
+  },
+  {
+    "name": "Side Plank",
+    "type": "cali",
+    "region": "core",
+    "function": "isometric",
+    "primary_group": "obliques",
+    "secondary_groups": ["abs"]
+  },
+  {
+    "name": "Dead Bug",
+    "type": "cali",
+    "region": "core",
+    "function": "anti_extension",
+    "primary_group": "abs",
+    "secondary_groups": ["hip_flexors"]
+  },
+  {
+    "name": "Bird Dog",
+    "type": "cali",
+    "region": "core",
+    "function": "anti_extension",
+    "primary_group": "abs",
+    "secondary_groups": ["erector_spinae", "glutes"]
+  },
+  {
+    "name": "Hollow Body Hold",
+    "type": "cali",
+    "region": "core",
+    "function": "isometric",
+    "primary_group": "abs",
+    "secondary_groups": ["hip_flexors"]
+  },
+  {
+    "name": "Hanging Leg Raise",
+    "type": "cali",
+    "region": "core",
+    "function": "flexion",
+    "primary_group": "abs",
+    "secondary_groups": ["hip_flexors"]
+  },
+  {
+    "name": "Lying Leg Raise",
+    "type": "cali",
+    "region": "core",
+    "function": "flexion",
+    "primary_group": "abs",
+    "secondary_groups": ["hip_flexors"]
+  },
+  {
+    "name": "Bicycle Crunch",
+    "type": "cali",
+    "region": "core",
+    "function": "rotation",
+    "primary_group": "obliques",
+    "secondary_groups": ["abs", "hip_flexors"]
+  },
+  {
+    "name": "Mountain Climber",
+    "type": "cali",
+    "region": "core",
+    "function": "flexion",
+    "primary_group": "hip_flexors",
+    "secondary_groups": ["abs", "deltoids_anterior"]
+  },
+  {
+    "name": "Db Goblet Squat",
+    "type": "db",
+    "region": "legs",
+    "function": "squat",
+    "primary_group": "quads",
+    "secondary_groups": ["glutes"]
+  },
+  {
+    "name": "Db Split Squat",
+    "type": "db",
+    "region": "legs",
+    "function": "lunge",
+    "primary_group": "quads",
+    "secondary_groups": ["glutes"]
+  },
+  {
+    "name": "Db Bulgarian Split Squat",
+    "type": "db",
+    "region": "legs",
+    "function": "lunge",
+    "primary_group": "quads",
+    "secondary_groups": ["glutes"]
+  },
+  {
+    "name": "Db Forward Lunge",
+    "type": "db",
+    "region": "legs",
+    "function": "lunge",
+    "primary_group": "quads",
+    "secondary_groups": ["glutes"]
+  },
+  {
+    "name": "Db Reverse Lunge",
+    "type": "db",
+    "region": "legs",
+    "function": "lunge",
+    "primary_group": "quads",
+    "secondary_groups": ["glutes"]
+  },
+  {
+    "name": "Db Step-Up",
+    "type": "db",
+    "region": "legs",
+    "function": "lunge",
+    "primary_group": "quads",
+    "secondary_groups": ["glutes"]
+  },
+  {
+    "name": "Band Squat",
+    "type": "band",
+    "region": "legs",
+    "function": "squat",
+    "primary_group": "quads",
+    "secondary_groups": ["glutes"]
+  },
+  {
+    "name": "Bodyweight Squat",
+    "type": "cali",
+    "region": "legs",
+    "function": "squat",
+    "primary_group": "quads",
+    "secondary_groups": ["glutes"]
+  },
+  {
+    "name": "Jump Squat",
+    "type": "cali",
+    "region": "legs",
+    "function": "squat",
+    "primary_group": "quads",
+    "secondary_groups": ["glutes", "calves"]
+  },
+  {
+    "name": "Pistol Squat",
+    "type": "cali",
+    "region": "legs",
+    "function": "squat",
+    "primary_group": "quads",
+    "secondary_groups": ["glutes"]
+  },
+  {
+    "name": "Sissy Squat",
+    "type": "cali",
+    "region": "legs",
+    "function": "squat",
+    "primary_group": "quads",
+    "secondary_groups": ["hip_flexors"]
+  },
+  {
+    "name": "Wall Sit",
+    "type": "cali",
+    "region": "legs",
+    "function": "isometric",
+    "primary_group": "quads",
+    "secondary_groups": ["glutes"]
+  },
+  {
+    "name": "Db Romanian Deadlift",
+    "type": "db",
+    "region": "legs",
+    "function": "hinge",
+    "primary_group": "hamstrings",
+    "secondary_groups": ["glutes", "erector_spinae"]
+  },
+  {
+    "name": "Db Single-Leg RDL",
+    "type": "db",
+    "region": "legs",
+    "function": "hinge",
+    "primary_group": "hamstrings",
+    "secondary_groups": ["glutes"]
+  },
+  {
+    "name": "Db Stiff-Leg Deadlift",
+    "type": "db",
+    "region": "legs",
+    "function": "hinge",
+    "primary_group": "hamstrings",
+    "secondary_groups": ["glutes", "erector_spinae"]
+  },
+  {
+    "name": "Db Hip Thrust",
+    "type": "db",
+    "region": "legs",
+    "function": "hinge",
+    "primary_group": "glutes",
+    "secondary_groups": ["hamstrings"]
+  },
+  {
+    "name": "Db Sumo Squat",
+    "type": "db",
+    "region": "legs",
+    "function": "squat",
+    "primary_group": "glutes",
+    "secondary_groups": ["adductors", "quads"]
+  },
+  {
+    "name": "Db Calf Raise",
+    "type": "db",
+    "region": "legs",
+    "function": "push",
+    "primary_group": "calves",
+    "secondary_groups": []
+  },
+  {
+    "name": "Band Good Morning",
+    "type": "band",
+    "region": "legs",
+    "function": "hinge",
+    "primary_group": "hamstrings",
+    "secondary_groups": ["glutes", "erector_spinae"]
+  },
+  {
+    "name": "Band Pull-Through",
+    "type": "band",
+    "region": "legs",
+    "function": "hinge",
+    "primary_group": "glutes",
+    "secondary_groups": ["hamstrings"]
+  },
+  {
+    "name": "Band Glute Kickback",
+    "type": "band",
+    "region": "legs",
+    "function": "hinge",
+    "primary_group": "glutes",
+    "secondary_groups": ["hamstrings"]
+  },
+  {
+    "name": "Band Clamshell",
+    "type": "band",
+    "region": "legs",
+    "function": "abduction",
+    "primary_group": "abductors",
+    "secondary_groups": ["glutes"]
+  },
+  {
+    "name": "Band Lateral Walk",
+    "type": "band",
+    "region": "legs",
+    "function": "abduction",
+    "primary_group": "abductors",
+    "secondary_groups": ["glutes"]
+  },
+  {
+    "name": "Glute Bridge",
+    "type": "cali",
+    "region": "legs",
+    "function": "hinge",
+    "primary_group": "glutes",
+    "secondary_groups": ["hamstrings"]
+  },
+  {
+    "name": "Single-Leg Glute Bridge",
+    "type": "cali",
+    "region": "legs",
+    "function": "hinge",
+    "primary_group": "glutes",
+    "secondary_groups": ["hamstrings"]
+  },
+  {
+    "name": "Nordic Curl",
+    "type": "cali",
+    "region": "legs",
+    "function": "flexion",
+    "primary_group": "hamstrings",
+    "secondary_groups": ["glutes"]
+  },
+  {
+    "name": "Single-Leg Calf Raise",
+    "type": "cali",
+    "region": "legs",
+    "function": "push",
+    "primary_group": "calves",
+    "secondary_groups": []
+  },
+  {
+    "name": "Side-Lying Leg Raise",
+    "type": "cali",
+    "region": "legs",
+    "function": "abduction",
+    "primary_group": "abductors",
+    "secondary_groups": ["hip_flexors"]
+  },
+  {
+    "name": "Copenhagen Plank",
+    "type": "cali",
+    "region": "legs",
+    "function": "isometric",
+    "primary_group": "adductors",
+    "secondary_groups": ["obliques"]
+  }
+]

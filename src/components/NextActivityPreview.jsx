@@ -10,7 +10,7 @@ export function NextActivityPreview() {
 
   if (!dp || !current_num) {
     return (
-      <div class="flex-1 bg-bg p-4 flex flex-col justify-center border-l border-surface-border">
+      <div class="flex-1 bg-bg py-4 pl-6 pr-4 flex flex-col justify-center border-l border-surface-border">
         <div class="text-[9px] font-bold uppercase tracking-[1.5px] text-text-muted mb-2.5">
           Next
         </div>
@@ -22,7 +22,7 @@ export function NextActivityPreview() {
   const next_da = dp.activities.find((a) => a.activity_num === current_num + 1);
   if (!next_da) {
     return (
-      <div class="flex-1 bg-bg p-4 flex flex-col justify-center border-l border-surface-border">
+      <div class="flex-1 bg-bg py-4 pl-6 pr-4 flex flex-col justify-center border-l border-surface-border">
         <div class="text-[9px] font-bold uppercase tracking-[1.5px] text-text-muted mb-2.5">
           Next
         </div>
@@ -34,7 +34,7 @@ export function NextActivityPreview() {
   const act = activity_map.value.get(next_da.activity_id);
 
   return (
-    <div class="flex-1 bg-bg p-4 flex flex-col justify-center border-l border-surface-border">
+    <div class="flex-1 bg-bg py-4 pl-6 pr-4 flex flex-col justify-center border-l border-surface-border">
       <div class="text-[9px] font-bold uppercase tracking-[1.5px] text-text-muted mb-2.5">
         Next
       </div>

@@ -11,7 +11,7 @@ export function WeekStrip() {
   const active = selected_week_num.value;
 
   return (
-    <div class="mb-4">
+    <div class="mb-3">
       <div class="flex items-center justify-between mb-2.5">
         <span class="text-[11px] font-semibold uppercase tracking-widest text-text-tertiary">
           Week
@@ -21,6 +21,7 @@ export function WeekStrip() {
           {camp.duration_weeks}
         </span>
       </div>
+      <div class="relative">
       <div class="flex gap-2 overflow-x-auto p-0.5 -m-0.5 scrollbar-none">
         {camp.weeks.map((w) => {
           const is_active = w.week_num === active;
@@ -38,6 +39,8 @@ export function WeekStrip() {
             </button>
           );
         })}
+      </div>
+      <div class="absolute right-0 top-0 bottom-0 w-8 pointer-events-none bg-gradient-to-l from-bg to-transparent" />
       </div>
     </div>
   );

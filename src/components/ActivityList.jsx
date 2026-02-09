@@ -24,8 +24,8 @@ export function ActivityList() {
 
   return (
     <>
-      <div class="flex-1 overflow-y-auto px-4 pb-4">
-        <div class="flex items-center gap-2 mb-3 pt-1">
+      <div class="overflow-y-auto min-h-0 px-4 pb-2">
+        <div class="flex items-center gap-2 mb-1 pt-2">
           <span class="text-[11px] font-bold uppercase tracking-widest text-text-tertiary">
             {DAY_NAMES[day_num] || ""}
           </span>

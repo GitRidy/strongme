@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-StrongMe is a minimalist workout timer PWA (Progressive Web App) for Android Chrome. It guides users through pre-defined workout plans with activity sequencing, set/rep counting, and timed countdown stages. **Currently in pre-development phase** — only design docs, mockups, and sample data exist.
+StrongMe is a minimalist workout timer PWA (Progressive Web App) for Android Chrome. It guides users through pre-defined workout plans with activity sequencing, set/rep counting, and timed countdown stages. **V0 implementation complete** — core UI, data loading, timer, and activity flow are functional.
 
 ## Tech Stack
 
@@ -14,7 +14,7 @@ StrongMe is a minimalist workout timer PWA (Progressive Web App) for Android Chr
 - **Deployment:** Vercel
 - **State:** Preact Signals or useState (no external state library)
 
-## Expected Build Commands (not yet configured)
+## Build Commands
 
 ```
 npm run dev      # Vite dev server
@@ -27,7 +27,7 @@ npm run build    # Production build
 
 **Data model hierarchy:** Campaign → Week Plans → Day Plans → Activities
 
-**UI layout** is a vertical mobile stack: Campaign Bar (5%) → Week Selector (8%) → Day Strip (8%) → Activity List (44%) → Timer Console (35%).
+**UI layout** is a vertical mobile stack using `flex flex-col h-screen`: Campaign Bar → Week Selector → Day Strip → Activity List (shrink-to-fit) → Timer Console (flex-1, expands to fill remaining space).
 
 **Timer Console** has three stages with distinct colors: prep (purple `#A855F7`) → work (cyan `#00D4FF`) → rest (orange `#F97316`).
 

@@ -9,7 +9,7 @@ export function CampaignBar() {
 
   return (
     <div
-      class="flex items-center justify-between px-5 pt-4 pb-3 cursor-pointer active:bg-surface transition-colors"
+      class="flex items-center justify-between px-5 pt-5 pb-3 cursor-pointer active:bg-surface transition-colors"
       onClick={() => (drawer_open.value = !drawer_open.value)}
     >
       <div class="flex flex-col gap-0.5">

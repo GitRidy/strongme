@@ -41,7 +41,7 @@ export function TimerConsole() {
   const is_paused = state === "paused";
 
   return (
-    <div class="bg-surface border-t border-surface-border flex min-h-[185px] relative">
+    <div class="bg-surface border-t border-surface-border flex min-h-[220px] flex-1 relative">
       {/* Flash overlay */}
       {flashing && (
         <div class="absolute inset-0 bg-white/20 z-10 pointer-events-none" />
@@ -49,11 +49,11 @@ export function TimerConsole() {
 
       {/* Main timer area */}
       <div
-        class="flex-[3] p-[18px_20px] flex flex-col cursor-pointer"
+        class="flex-[3] p-[28px_20px] flex flex-col cursor-pointer"
         onClick={toggle_pause}
       >
-        <div class="mb-1.5">
-          <div class="text-base font-bold tracking-tight mb-0.5">
+        <div class="mb-4">
+          <div class="text-base font-bold tracking-tight mb-1.5">
             {act?.name || "Select an activity"}
           </div>
           {act && (
@@ -63,7 +63,7 @@ export function TimerConsole() {
           )}
         </div>
 
-        <div class="flex-1 flex flex-col items-center justify-center gap-0.5">
+        <div class="flex-1 flex flex-col items-center justify-center gap-2.5">
           {!is_idle && (
             <div
               class={`text-[11px] font-bold uppercase tracking-[2px] ${STAGE_COLORS[d_state] || "text-text-tertiary"}`}
@@ -80,8 +80,10 @@ export function TimerConsole() {
         </div>
 
         <div class="mt-auto">
-          <ProgressBar />
-          <div class="text-center text-[10px] font-semibold text-text-muted mt-2.5 uppercase tracking-[1.5px]">
+          <div class="my-4">
+            <ProgressBar />
+          </div>
+          <div class="text-center text-[10px] font-semibold text-text-muted uppercase tracking-[1.5px]">
             {is_idle
               ? "Select activity"
               : is_paused

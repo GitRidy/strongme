@@ -10,7 +10,7 @@ export function ActivityCard({ day_activity, is_active, on_select, on_info }) {
   return (
     <div
       onClick={on_select}
-      class={`bg-surface rounded-md border-[1.5px] p-3 px-3.5 mb-2 flex items-center gap-3 cursor-pointer transition-all duration-200 relative ${
+      class={`bg-surface rounded-md border-[1.5px] p-4 px-6 mb-2.5 flex items-center gap-5 cursor-pointer transition-all duration-200 relative ${
         is_active
           ? "border-accent shadow-[0_0_24px_var(--color-accent-glow),inset_0_0_0_1px_var(--color-accent-muted)]"
           : "border-surface-border hover:border-white/15 hover:bg-surface-elevated"

@@ -32,7 +32,7 @@ export function App() {
   }
 
   return (
-    <>
+    <div class="flex flex-col h-screen overflow-hidden">
       <CampaignBar />
       <CampaignDrawer />
       <div class="mx-4 mb-3">
@@ -41,6 +41,6 @@ export function App() {
       </div>
       <ActivityList />
       <TimerConsole />
-    </>
+    </div>
   );
 }

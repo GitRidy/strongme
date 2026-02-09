@@ -1,0 +1,8 @@
+[
+  { "id": "chest", "name": "Chest" },
+  { "id": "shoulders", "name": "Shoulders" },
+  { "id": "back", "name": "Back" },
+  { "id": "arms", "name": "Arms" },
+  { "id": "core", "name": "Core" },
+  { "id": "legs", "name": "Legs" }
+]

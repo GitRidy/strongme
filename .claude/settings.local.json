@@ -7,7 +7,8 @@
       "Bash(npm:*)",
       "Bash(node --version:*)",
       "Bash(echo:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(npx vite build)"
     ]
   }
 }
